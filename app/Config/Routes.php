@@ -32,7 +32,8 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-
+$routes->get('/', 'Report::show_report');
+$routes->get('/input', 'Report::show_input');
 
 /*
  * --------------------------------------------------------------------

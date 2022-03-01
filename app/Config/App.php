@@ -23,7 +23,7 @@ class App extends BaseConfig
 	 *
 	 * @var string
 	 */
-	public $baseURL = 'http://localhost/code_team42/public';
+	public $baseURL = 'http://localhost/vote_app/public';
 
 	/**
 	 * --------------------------------------------------------------------------

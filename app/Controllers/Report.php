@@ -22,7 +22,8 @@ class Report extends Cdms_controller {
     * @Create Date  2564-07-30
     */
     public function show_report() {
-        $this->output('v_report');
+        // $this->output('v_report'); // Chart.js
+        $this->output('v_test'); // amCharts 5 
     }
 
     public function show_input() {
