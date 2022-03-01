@@ -23,12 +23,26 @@
 // Enable pusher logging - don't include this in production
 Pusher.logToConsole = true;
 
-var pusher = new Pusher('b485b70127147958e1fa', {
+var pusher1 = new Pusher('b485b70127147958e1fa', {
     cluster: 'ap1'
 });
 
-var channel = pusher.subscribe('pusher_score');
+var channel = pusher1.subscribe('pusher_score');
 channel.bind('up_score', function(data) {
+    console.log('API PEE');
+    var cluster = Number(data.message.cluster);
+    var score = Number(data.message.score);
+    myChart.data.datasets[0].data[cluster] += score;
+    myChart.update();
+});
+
+var pusher2 = new Pusher('e07bc6c3ee7696ad0104', {
+    cluster: 'ap1'
+});
+
+var channel = pusher2.subscribe('pusher_score');
+channel.bind('up_score', function(data) {
+    console.log('API SUN');
     var cluster = Number(data.message.cluster);
     var score = Number(data.message.score);
     myChart.data.datasets[0].data[cluster] += score;
@@ -39,10 +53,10 @@ const ctx = document.getElementById('myChart').getContext('2d');
 const myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9'],
         datasets: [{
             label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
