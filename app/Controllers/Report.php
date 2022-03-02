@@ -26,6 +26,10 @@ class Report extends Cdms_controller {
         $this->output('v_test'); // amCharts 5 
     }
 
+    public function index() {
+        echo view("v_vote");
+    }
+
     public function show_input() {
         $this->output('v_input');
     }
