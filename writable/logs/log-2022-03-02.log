@@ -1,0 +1,51 @@
+CRITICAL - 2022-03-02 07:37:42 --> Class 'Pusher\Pusher' not found
+#0 C:\xampp\htdocs\vote-app\app\Controllers\Report.php(44): App\Controllers\Report->process2(NULL, NULL)
+#1 C:\xampp\htdocs\vote-app\system\CodeIgniter.php(928): App\Controllers\Report->process()
+#2 C:\xampp\htdocs\vote-app\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#3 C:\xampp\htdocs\vote-app\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\vote-app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 07:37:42 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\vote-app\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\vote-app\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\vote-app\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\vote-app\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-02 07:38:50 --> Class 'Pusher\Pusher' not found
+#0 C:\xampp\htdocs\vote_app\app\Controllers\Report.php(44): App\Controllers\Report->process2('4', '500')
+#1 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(928): App\Controllers\Report->process()
+#2 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#3 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\vote_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 07:38:50 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-02 07:39:21 --> Class 'Pusher\Pusher' not found
+#0 C:\xampp\htdocs\vote_app\app\Controllers\Report.php(41): App\Controllers\Report->process1('4', '500')
+#1 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(928): App\Controllers\Report->process()
+#2 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#3 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\vote_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 07:39:21 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
