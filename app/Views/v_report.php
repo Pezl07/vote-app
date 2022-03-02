@@ -29,11 +29,12 @@ var pusher1 = new Pusher('b485b70127147958e1fa', {
 
 var channel = pusher1.subscribe('pusher_score');
 channel.bind('up_score', function(data) {
-    console.log('API PEE');
-    var cluster = Number(data.message.cluster);
-    var score = Number(data.message.score);
-    myChart.data.datasets[0].data[cluster] += score;
-    myChart.update();
+    console.log(data);
+    // console.log('API PEE');
+    // var cluster = Number(data.message.cluster);
+    // var score = Number(data.message.score);
+    // myChart.data.datasets[0].data[cluster] += score;
+    // myChart.update();
 });
 
 var pusher2 = new Pusher('e07bc6c3ee7696ad0104', {
@@ -42,11 +43,12 @@ var pusher2 = new Pusher('e07bc6c3ee7696ad0104', {
 
 var channel = pusher2.subscribe('pusher_score');
 channel.bind('up_score', function(data) {
-    console.log('API SUN');
-    var cluster = Number(data.message.cluster);
-    var score = Number(data.message.score);
-    myChart.data.datasets[0].data[cluster] += score;
-    myChart.update();
+    console.log(data);
+    // console.log('API SUN');
+    // var cluster = Number(data.message.cluster);
+    // var score = Number(data.message.score);
+    // myChart.data.datasets[0].data[cluster] += score;
+    // myChart.update();
 });
 
 const ctx = document.getElementById('myChart').getContext('2d');

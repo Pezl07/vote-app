@@ -35,56 +35,44 @@ class Report extends Cdms_controller {
     }
 
     public function process() {
-        $obj =  $this->request->getPost();
+        $obj_score_input =  $this->request->getPost("score_input_cluster");
     
         // echo "Cluster : " . $obj['cluster'] . '<br>';
         // echo "Score : " . $obj['score'] . '<br>';
         echo "<pre>";
-        print_r($obj);
+        print_r($obj_score_input);
         echo "</pre>";
 
         // $number = mt_rand(0,1);    // $this->show_input();
-        // if($number == 0){
-        //     $this->process1($obj['cluster'], $obj['score']);
-        //     echo '1';
+        $number  = 0;
+        if($number == 0)
+            $this->process1($obj_score_input);
+            // echo '1';
         // }else{
-        //     $this->process2($obj['cluster'], $obj['score']);
+        //     $this->process2($obj_score_input);
         //     echo '2';
         // }
 
     }
 
-    public function process1($cluster = NULL, $score = NULL) {
+    public function process1($obj_score_input) {
         $app_id = "1354801";
         $key = "b485b70127147958e1fa";
         $secret = "fc79828e41d97bae4df6";
         $app_cluster = "ap1";
         $pusher = new Pusher($key, $secret, $app_id, ['cluster' => $app_cluster]);
-
-        $data['message'] = array(
-            'cluster' => $cluster,
-            'score' => $score,
-            "API" => 1
-        );
-
+        $data = $obj_score_input;
         $pusher->trigger('pusher_score', 'up_score', $data);
     }
 
-    public function process2($cluster = NULL, $score = NULL) {
+    public function process2($obj_score_input) {
         $app_id = "1354955";
         $key = "e07bc6c3ee7696ad0104";
         $secret = "5a4aae53ea8f5fc88003";
         $app_cluster = "ap1";
         $pusher = new Pusher($key, $secret, $app_id, ['cluster' => $app_cluster]);
-
-        $data['message'] = array(
-            'cluster' => $cluster,
-            'score' => $score,
-            "API" => 2
-        );
-
+        $data = $obj_score_input;
         $pusher->trigger('pusher_score', 'up_score', $data);
-        // $this->show_input();
     }
 }
 

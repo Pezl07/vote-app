@@ -24,11 +24,15 @@
         .modal-content {
             border-radius: 0px !important;
         }
+        .navbar {
+            background-color: white !important;
+            box-shadow: 1px 1px 5px 3px rgba(100,100,100,0.2);
+        }
     </style>
 </head>
 <body>
     <main class="main" id="top">
-        <nav class="navbar navbar-expand-lg navbar-light sticky-top" data-navbar-on-scroll="data-navbar-on-scroll" style="box-shadow: 1px 1px 5px 3px rgba(100,100,100)">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top" data-navbar-on-scroll="data-navbar-on-scroll">
             <div class="container">
                 <img class="me-3" src="https://dummyimage.com/40x40/000/fff" alt="">
                 <a class="navbar-brand" href="<?= base_url() . "/Vote"?>">ระบบโหวต</a>

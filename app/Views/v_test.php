@@ -225,19 +225,20 @@ var pusher1 = new Pusher('b485b70127147958e1fa', {
 var channel = pusher1.subscribe('pusher_score');
 channel.bind('up_score', function(response) {
     console.log('API PEE');
-    var cluster = response.message.cluster;
-    var score = Number(response.message.score);
+    console.log(response);
+    // var cluster = response.message.cluster;
+    // var score = Number(response.message.score);
     
-    // console.log(data.find(x => x.name === "A"));
-    data.find(x => x.cluster === cluster).value += Number(score); 
-    // console.log(data.find(x => x.name === "A"));
+    // // console.log(data.find(x => x.name === "A"));
+    // data.find(x => x.cluster === cluster).value += Number(score); 
+    // // console.log(data.find(x => x.name === "A"));
 
-    data.sort(function (x, y) {
-        return x.value - y.value;
-    });
-    series.data.setAll(data); 
-    xAxis.data.setAll(data);
-    console.log(score);
+    // data.sort(function (x, y) {
+    //     return x.value - y.value;
+    // });
+    // series.data.setAll(data); 
+    // xAxis.data.setAll(data);
+    // console.log(score);
 });
 
 var pusher2 = new Pusher('e07bc6c3ee7696ad0104', {
@@ -247,20 +248,20 @@ var pusher2 = new Pusher('e07bc6c3ee7696ad0104', {
 var channel = pusher2.subscribe('pusher_score');
 channel.bind('up_score', function(response) {
     console.log('API SUN');
-    var cluster = response.message.cluster;
-    var score = Number(response.message.score);
-    console.log(score);
-    console.log(cluster);
-    // console.log(data.find(x => x.name === "A"));
-    data.find(x => x.cluster == cluster).value += Number(score); 
-    // console.log(data.find(x => x.name === "A"));
+    // var cluster = response.message.cluster;
+    // var score = Number(response.message.score);
+    // console.log(score);
+    // console.log(cluster);
+    // // console.log(data.find(x => x.name === "A"));
+    // data.find(x => x.cluster == cluster).value += Number(score); 
+    // // console.log(data.find(x => x.name === "A"));
 
-    data.sort(function (x, y) {
-        return x.value - y.value;
-    });
-    series.data.setAll(data); 
-    xAxis.data.setAll(data);
-    console.log(score);
+    // data.sort(function (x, y) {
+    //     return x.value - y.value;
+    // });
+    // series.data.setAll(data); 
+    // xAxis.data.setAll(data);
+    // console.log(score);
 });
 
 </script>
