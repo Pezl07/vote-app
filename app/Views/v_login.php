@@ -124,8 +124,10 @@
 
     .content {
         padding: 40px;
-        width: 40%;
-        background-color: #fff;
+        width: 35%;
+        height: 70%;
+        padding-top: 80px;
+        background-color: rgba(255, 255, 255, 0.5);
         border-radius: 10px;
         position: absolute;
         transform: translate(-50%,-50%);
