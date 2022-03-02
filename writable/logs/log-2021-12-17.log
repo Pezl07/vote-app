@@ -1,0 +1,744 @@
+CRITICAL - 2021-12-17 06:35:06 --> Call to a member function save() on null
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 06:38:10 --> Class 'Mpdf\Mpdf' not found
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Pdf\Mpdf.php(65): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->createExternalWriterInstance(Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(771): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->save('php://output')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:38:11 --> Class 'Mpdf\Mpdf' not found
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Pdf\Mpdf.php(65): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->createExternalWriterInstance(Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(771): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->save('php://output')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:38:16 --> Class 'Mpdf\Mpdf' not found
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Pdf\Mpdf.php(65): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->createExternalWriterInstance(Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(771): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->save('php://output')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:38:35 --> Class 'Mpdf\Mpdf' not found
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Pdf\Mpdf.php(65): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->createExternalWriterInstance(Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(771): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->save('php://output')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:43:06 --> Class 'Mpdf\Mpdf' not found
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Pdf\Mpdf.php(65): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->createExternalWriterInstance(Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(743): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->save('demo.pdf')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:43:45 --> require(C:\xampp\htdocs\code_team4\app\/third_party/PhpSpreadsheet/vendor/autoload.php): failed to open stream: No such file or directory
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(C:\\xamp...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(22): require()
+#2 C:\xampp\htdocs\code_team4\system\Router\Router.php(566): include_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\code_team4\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('Service_show/te...')
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(809): CodeIgniter\Router\Router->handle('Service_show/te...')
+#5 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-17 06:43:56 --> require(C:\xampp\htdocs\code_team4\app\/third_party/PhpSpreadsheet/vendor/autoload.php): failed to open stream: No such file or directory
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(727): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(C:\\xamp...', 'C:\\xampp\\htdocs...', 727, Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(727): require()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:45:06 --> Class 'Mpdf\Mpdf' not found
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Pdf\Mpdf.php(65): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->createExternalWriterInstance(Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(741): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->save('demo.pdf')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:45:07 --> Class 'Mpdf\Mpdf' not found
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Pdf\Mpdf.php(65): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->createExternalWriterInstance(Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(741): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->save('demo.pdf')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:45:08 --> Class 'Mpdf\Mpdf' not found
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Pdf\Mpdf.php(65): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->createExternalWriterInstance(Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(741): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->save('demo.pdf')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:45:08 --> Class 'Mpdf\Mpdf' not found
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Pdf\Mpdf.php(65): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->createExternalWriterInstance(Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(741): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->save('demo.pdf')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:45:09 --> Class 'Mpdf\Mpdf' not found
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Pdf\Mpdf.php(65): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->createExternalWriterInstance(Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(741): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->save('demo.pdf')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:45:09 --> Class 'Mpdf\Mpdf' not found
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Pdf\Mpdf.php(65): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->createExternalWriterInstance(Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(741): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->save('demo.pdf')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:45:09 --> Class 'Mpdf\Mpdf' not found
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Pdf\Mpdf.php(65): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->createExternalWriterInstance(Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(741): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->save('demo.pdf')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:45:09 --> Class 'Mpdf\Mpdf' not found
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Pdf\Mpdf.php(65): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->createExternalWriterInstance(Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(741): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->save('demo.pdf')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:48:07 --> Class 'Mpdf\Mpdf' not found
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Pdf\Mpdf.php(65): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->createExternalWriterInstance(Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(741): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->save('php://output')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:48:08 --> Class 'Mpdf\Mpdf' not found
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Pdf\Mpdf.php(65): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->createExternalWriterInstance(Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(741): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->save('php://output')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:48:09 --> Class 'Mpdf\Mpdf' not found
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Pdf\Mpdf.php(65): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->createExternalWriterInstance(Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(741): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->save('php://output')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:48:09 --> Class 'Mpdf\Mpdf' not found
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Pdf\Mpdf.php(65): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->createExternalWriterInstance(Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(741): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->save('php://output')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:48:10 --> Class 'Mpdf\Mpdf' not found
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Pdf\Mpdf.php(65): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->createExternalWriterInstance(Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(741): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->save('php://output')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:48:10 --> Class 'Mpdf\Mpdf' not found
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Pdf\Mpdf.php(65): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->createExternalWriterInstance(Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(741): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->save('php://output')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:48:10 --> Class 'Mpdf\Mpdf' not found
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Pdf\Mpdf.php(65): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->createExternalWriterInstance(Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(741): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->save('php://output')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:48:11 --> Class 'Mpdf\Mpdf' not found
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Pdf\Mpdf.php(65): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->createExternalWriterInstance(Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(741): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->save('php://output')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:48:11 --> Class 'Mpdf\Mpdf' not found
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Pdf\Mpdf.php(65): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->createExternalWriterInstance(Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(741): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->save('php://output')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:48:11 --> Class 'Mpdf\Mpdf' not found
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Pdf\Mpdf.php(65): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->createExternalWriterInstance(Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(741): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->save('php://output')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:48:12 --> Class 'Mpdf\Mpdf' not found
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Pdf\Mpdf.php(65): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->createExternalWriterInstance(Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(741): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->save('php://output')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:48:12 --> Class 'Mpdf\Mpdf' not found
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Pdf\Mpdf.php(65): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->createExternalWriterInstance(Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(741): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->save('php://output')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:48:12 --> Class 'Mpdf\Mpdf' not found
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Pdf\Mpdf.php(65): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->createExternalWriterInstance(Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(741): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->save('php://output')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:48:13 --> Class 'Mpdf\Mpdf' not found
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Pdf\Mpdf.php(65): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->createExternalWriterInstance(Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(741): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->save('php://output')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:48:13 --> Class 'Mpdf\Mpdf' not found
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Pdf\Mpdf.php(65): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->createExternalWriterInstance(Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(741): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->save('php://output')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:48:13 --> Class 'Mpdf\Mpdf' not found
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Pdf\Mpdf.php(65): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->createExternalWriterInstance(Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(741): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->save('php://output')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:48:14 --> Class 'Mpdf\Mpdf' not found
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Pdf\Mpdf.php(65): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->createExternalWriterInstance(Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(741): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->save('php://output')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:48:14 --> Class 'Mpdf\Mpdf' not found
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Pdf\Mpdf.php(65): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->createExternalWriterInstance(Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(741): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->save('php://output')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:48:14 --> Class 'Mpdf\Mpdf' not found
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Pdf\Mpdf.php(65): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->createExternalWriterInstance(Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(741): PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf->save('php://output')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:50:07 --> Too few arguments to function PhpOffice\PhpSpreadsheet\Writer\Pdf::__construct(), 0 passed in C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php on line 724 and exactly 1 expected
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(724): PhpOffice\PhpSpreadsheet\Writer\Pdf->__construct()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-17 06:52:58 --> File "prova_inserimento.xlsx" does not exist.
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(319): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('prova_inserimen...')
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(728): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('prova_inserimen...')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:52:59 --> File "prova_inserimento.xlsx" does not exist.
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(319): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('prova_inserimen...')
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(728): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('prova_inserimen...')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:52:59 --> File "prova_inserimento.xlsx" does not exist.
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(319): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('prova_inserimen...')
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(728): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('prova_inserimen...')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:53:00 --> File "prova_inserimento.xlsx" does not exist.
+#0 C:\xampp\htdocs\code_team4\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(319): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('prova_inserimen...')
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(728): PhpOffice\PhpSpreadsheet\Reader\Xlsx->load('prova_inserimen...')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 06:59:04 --> Class 'App\Controllers\Wkhtmltopdf' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 06:59:45 --> Class 'App\Controllers\Wkhtmltopdf' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 06:59:47 --> Class 'App\Controllers\Wkhtmltopdf' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:00:35 --> Class 'App\Controllers\Wkhtmltopdf' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:00:36 --> Class 'App\Controllers\Wkhtmltopdf' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:00:37 --> Class 'App\Controllers\Wkhtmltopdf' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:03:08 --> require(pdfcrowd.php): failed to open stream: No such file or directory
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(723): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(pdfcrow...', 'C:\\xampp\\htdocs...', 723, Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(723): require()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 07:03:10 --> require(pdfcrowd.php): failed to open stream: No such file or directory
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(723): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(pdfcrow...', 'C:\\xampp\\htdocs...', 723, Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(723): require()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 07:03:17 --> Class 'App\Controllers\Pdfcrowd' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:03:18 --> Class 'App\Controllers\Pdfcrowd' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:03:34 --> Call to a member function convertURI() on null
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:03:35 --> Call to a member function convertURI() on null
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:09:00 --> Call to a member function convertFile() on null
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:09:07 --> Call to undefined function App\Controllers\convertFile()
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:09:44 --> Call to a member function convertURI() on null
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:09:45 --> Call to a member function convertURI() on null
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:09:46 --> Call to a member function convertURI() on null
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:10:15 --> require(pdfcrowd.php): failed to open stream: No such file or directory
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(723): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(pdfcrow...', 'C:\\xampp\\htdocs...', 723, Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(723): require()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 07:19:49 --> require(pdfcrowd.php): failed to open stream: No such file or directory
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(724): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(pdfcrow...', 'C:\\xampp\\htdocs...', 724, Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(724): require()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 07:21:17 --> Denied url http://localhost/code_team4/public/Login_show/login_show_ajax
+#0 C:\xampp\htdocs\code_team4\vendor\pdfcrowd\pdfcrowd\pdfcrowd.php(795): Pdfcrowd\ConnectionHelper->output_body(400, 'Denied url http...', Resource id #162)
+#1 C:\xampp\htdocs\code_team4\vendor\pdfcrowd\pdfcrowd\pdfcrowd.php(678): Pdfcrowd\ConnectionHelper->post_no_curl(Array, Array, Array, Resource id #162)
+#2 C:\xampp\htdocs\code_team4\vendor\pdfcrowd\pdfcrowd\pdfcrowd.php(968): Pdfcrowd\ConnectionHelper->post(Array, Array, Array, Resource id #162)
+#3 C:\xampp\htdocs\code_team4\vendor\pdfcrowd\pdfcrowd\pdfcrowd.php(987): Pdfcrowd\HtmlToPdfClient->convertUrlToStream('http://localhos...', Resource id #162)
+#4 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(730): Pdfcrowd\HtmlToPdfClient->convertUrlToFile('http://localhos...', 'example.pdf')
+#5 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#6 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#7 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-17 07:21:22 --> Denied url http://localhost/code_team4/public/Login_show/login_show_ajax
+#0 C:\xampp\htdocs\code_team4\vendor\pdfcrowd\pdfcrowd\pdfcrowd.php(795): Pdfcrowd\ConnectionHelper->output_body(400, 'Denied url http...', Resource id #162)
+#1 C:\xampp\htdocs\code_team4\vendor\pdfcrowd\pdfcrowd\pdfcrowd.php(678): Pdfcrowd\ConnectionHelper->post_no_curl(Array, Array, Array, Resource id #162)
+#2 C:\xampp\htdocs\code_team4\vendor\pdfcrowd\pdfcrowd\pdfcrowd.php(968): Pdfcrowd\ConnectionHelper->post(Array, Array, Array, Resource id #162)
+#3 C:\xampp\htdocs\code_team4\vendor\pdfcrowd\pdfcrowd\pdfcrowd.php(987): Pdfcrowd\HtmlToPdfClient->convertUrlToStream('http://localhos...', Resource id #162)
+#4 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(730): Pdfcrowd\HtmlToPdfClient->convertUrlToFile('http://localhos...', 'example.pdf')
+#5 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#6 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#7 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-17 07:21:33 --> Call to a member function convertUrlToFile() on null
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:21:47 --> Class 'pdfcrowd\pdfcrowd' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:22:05 --> Class 'pdfcrowd\pdfcrowd' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:22:05 --> Class 'pdfcrowd\pdfcrowd' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:23:40 --> Class 'pdfcrowd\pdfcrowd' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:24:37 --> Class 'pdfcrowd\pdfcrowd' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:24:38 --> Class 'pdfcrowd\pdfcrowd' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:24:38 --> Class 'pdfcrowd\pdfcrowd' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:24:39 --> Class 'pdfcrowd\pdfcrowd' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:24:39 --> Class 'pdfcrowd\pdfcrowd' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:24:39 --> Class 'pdfcrowd\pdfcrowd' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:24:39 --> Class 'pdfcrowd\pdfcrowd' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:24:39 --> Class 'pdfcrowd\pdfcrowd' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:24:40 --> Class 'pdfcrowd\pdfcrowd' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:24:40 --> Class 'pdfcrowd\pdfcrowd' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:24:54 --> require(pdfcrowd.php): failed to open stream: No such file or directory
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(724): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(pdfcrow...', 'C:\\xampp\\htdocs...', 724, Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(724): require()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-17 07:25:41 --> Class 'pdfcrowd\pdfcrowd' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:25:42 --> Class 'pdfcrowd\pdfcrowd' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:25:43 --> Class 'pdfcrowd\pdfcrowd' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:25:44 --> Class 'pdfcrowd\pdfcrowd' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:27:01 --> Class 'pdfcrowd\pdfcrowd' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:27:02 --> Class 'pdfcrowd\pdfcrowd' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:27:02 --> Class 'pdfcrowd\pdfcrowd' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:27:03 --> Class 'pdfcrowd\pdfcrowd' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:27:11 --> Class 'pdfcrowd\pdfcrowd' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:27:26 --> Class 'pdfcrowd\pdfcrowd' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:27:27 --> Class 'pdfcrowd\pdfcrowd' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:27:49 --> Class 'pdfcrowd\pdfcrowd' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:27:50 --> Class 'pdfcrowd\pdfcrowd' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:27:51 --> Class 'pdfcrowd\pdfcrowd' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:29:40 --> syntax error, unexpected 'HTTP' (T_STRING)
+#0 C:\xampp\htdocs\code_team4\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('Service_show/te...')
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(809): CodeIgniter\Router\Router->handle('Service_show/te...')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-17 07:29:41 --> syntax error, unexpected 'HTTP' (T_STRING)
+#0 C:\xampp\htdocs\code_team4\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('Service_show/te...')
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(809): CodeIgniter\Router\Router->handle('Service_show/te...')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-17 07:40:57 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-17 07:41:22 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-17 07:46:48 --> WriteHTML() requires $html be an integer, float, string, boolean or an object with the __toString() magic method.
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(726): Mpdf\Mpdf->WriteHTML(NULL)
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-17 07:47:34 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-17 07:49:48 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-17 07:50:17 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-17 07:50:20 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-17 07:52:00 --> syntax error, unexpected '$mpdf' (T_VARIABLE)
+#0 C:\xampp\htdocs\code_team4\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('Service_show/te...')
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(809): CodeIgniter\Router\Router->handle('Service_show/te...')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-17 07:52:27 --> Class 'App\Controllers\Mpdf\Config\ConfigVariables' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:55:07 --> CodeIgniter\Router\Router::main(): Failed opening required 'C:\xampp\htdocs\code_team4\app\Controllers/vendor/autoload.php' (include_path='C:\xampp\php\PEAR')
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-17 07:55:16 --> Class 'App\Controllers\Mpdf\Config\ConfigVariables' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 07:55:44 --> Class 'App\Controllers\Mpdf\Config\ConfigVariables' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-17 08:51:57 --> Invalid file: Bill.php
+#0 C:\xampp\htdocs\code_team4\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Bill.php')
+#1 C:\xampp\htdocs\code_team4\system\Common.php(1271): CodeIgniter\View\View->render('Bill', Array, true)
+#2 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(725): view('Bill')
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#5 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-17 10:12:55 --> Argument 1 passed to Mpdf\Mpdf::__construct() must be of the type array, string given, called in C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php on line 723
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(723): Mpdf\Mpdf->__construct('utf-8', 'A4')
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->service_print_cost()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-17 10:12:56 --> Argument 1 passed to Mpdf\Mpdf::__construct() must be of the type array, string given, called in C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php on line 723
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(723): Mpdf\Mpdf->__construct('utf-8', 'A4')
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->service_print_cost()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-17 21:37:09 --> Invalid file: v_invoic2.php
+#0 C:\xampp\htdocs\code_team4\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_invoic2.php')
+#1 C:\xampp\htdocs\code_team4\system\Common.php(1271): CodeIgniter\View\View->render('v_invoic2', Array, true)
+#2 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(734): view('v_invoic2')
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->test()
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#5 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

@@ -1,0 +1,8 @@
+CRITICAL - 2021-08-03 09:06:24 --> Class 'App\Controllers\T4MNG_Controller' not found
+#0 C:\xampp\htdocs\code_team4\system\Router\Router.php(566): include_once()
+#1 C:\xampp\htdocs\code_team4\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('Dashboard/show_...')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(809): CodeIgniter\Router\Router->handle('Dashboard/show_...')
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

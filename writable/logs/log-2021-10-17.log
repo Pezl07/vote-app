@@ -1,0 +1,12 @@
+CRITICAL - 2021-10-17 08:32:22 --> count(): Parameter must be an array or an object that implements Countable
+#0 C:\xampp\htdocs\code_team4\app\Views\v_agent_show_information.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 114, Array)
+#1 C:\xampp\htdocs\code_team4\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\code_team4\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\code_team4\system\Common.php(1271): CodeIgniter\View\View->render('v_agent_show_in...', Array, true)
+#4 C:\xampp\htdocs\code_team4\app\Controllers\Cdms_controller.php(64): view('v_agent_show_in...', Array)
+#5 C:\xampp\htdocs\code_team4\app\Controllers\Agent_show.php(87): App\Controllers\Cdms_controller->output('v_agent_show_in...', Array)
+#6 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Agent_show->agent_detail('5')
+#7 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_show))
+#8 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}

@@ -1,0 +1,11 @@
+ERROR - 2021-10-31 08:59:42 --> Error connecting to the database: Unknown database 'container drop management system'
+CRITICAL - 2021-10-31 08:59:42 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'container drop management system'
+#0 C:\xampp\htdocs\code_team4\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\code_team4\app\Models\M_cdms_agent.php(38): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#2 C:\xampp\htdocs\code_team4\app\Controllers\Agent_show.php(33): App\Models\M_cdms_agent->get_all()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Agent_show->agent_show_ajax()
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_show))
+#5 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

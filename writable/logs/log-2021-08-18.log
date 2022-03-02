@@ -1,0 +1,48 @@
+CRITICAL - 2021-08-18 08:08:31 --> Call to undefined method App\Controllers\Customer_input::container_input()
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_input->customer_insert()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_input))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-08-18 08:23:11 --> syntax error, unexpected 'endfor' (T_ENDFOR)
+#0 C:\xampp\htdocs\code_team4\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('Customer_input/...')
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(809): CodeIgniter\Router\Router->handle('Customer_input/...')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-18 08:58:24 --> Call to a member function is_cus_branch_exist() on null
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_input->customer_insert()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_input))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-08-18 08:58:57 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' cus_branch = ' แสนสุข'' at line 1
+CRITICAL - 2021-08-18 08:58:57 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Customer_input.php(56): App\Models\M_cdms_customer->is_cus_branch_exist(' \xE0\xB9\x84\xE0\xB8\xAD\xE0\xB8\xA7\xE0\xB8\xB5', ' \xE0\xB9\x81\xE0\xB8\xAA\xE0\xB8\x99\xE0\xB8\xAA\xE0\xB8...')
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_input->customer_insert()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_input))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-08-18 08:59:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' cus_branch = ' แสนสุข'' at line 1
+CRITICAL - 2021-08-18 08:59:22 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Customer_input.php(56): App\Models\M_cdms_customer->is_cus_branch_exist(' \xE0\xB9\x84\xE0\xB8\xAD\xE0\xB8\xA7\xE0\xB8\xB5', ' \xE0\xB9\x81\xE0\xB8\xAA\xE0\xB8\x99\xE0\xB8\xAA\xE0\xB8...')
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_input->customer_insert()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_input))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-18 09:19:52 --> Too few arguments to function CodeIgniter\HTTP\Response::redirect(), 0 passed in C:\xampp\htdocs\code_team4\app\Controllers\Customer_input.php on line 60 and at least 1 expected
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Customer_input.php(60): CodeIgniter\HTTP\Response->redirect()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_input->customer_insert()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_input))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-18 09:20:04 --> Call to undefined method App\Controllers\Customer_input::redirect()
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_input->customer_insert()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_input))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

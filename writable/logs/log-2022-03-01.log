@@ -1,0 +1,292 @@
+CRITICAL - 2022-03-01 03:31:24 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-01 03:31:31 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-01 03:31:40 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-01 03:33:04 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-01 03:33:08 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-01 03:33:11 --> Argument 2 passed to view() must be of the type array, null given, called in C:\xampp\htdocs\code_team42\app\Controllers\Cdms_controller.php on line 58
+#0 C:\xampp\htdocs\code_team42\app\Controllers\Cdms_controller.php(58): view('/template/heade...', NULL)
+#1 C:\xampp\htdocs\code_team42\app\Controllers\Agent_show.php(26): App\Controllers\Cdms_controller->output('v_agent_edit', NULL)
+#2 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(928): App\Controllers\Agent_show->agent_show_ajax()
+#3 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_show))
+#4 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team42\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-01 03:33:11 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(TypeError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(TypeError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-01 03:33:43 --> Argument 2 passed to view() must be of the type array, null given, called in C:\xampp\htdocs\code_team42\app\Controllers\Cdms_controller.php on line 58
+#0 C:\xampp\htdocs\code_team42\app\Controllers\Cdms_controller.php(58): view('/template/heade...', NULL)
+#1 C:\xampp\htdocs\code_team42\app\Controllers\Agent_show.php(24): App\Controllers\Cdms_controller->output('v_agent_edit', NULL)
+#2 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(928): App\Controllers\Agent_show->agent_show_ajax()
+#3 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_show))
+#4 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team42\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-01 03:33:43 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(TypeError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(TypeError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-01 03:33:44 --> Argument 2 passed to view() must be of the type array, null given, called in C:\xampp\htdocs\code_team42\app\Controllers\Cdms_controller.php on line 58
+#0 C:\xampp\htdocs\code_team42\app\Controllers\Cdms_controller.php(58): view('/template/heade...', NULL)
+#1 C:\xampp\htdocs\code_team42\app\Controllers\Agent_show.php(24): App\Controllers\Cdms_controller->output('v_agent_edit', NULL)
+#2 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(928): App\Controllers\Agent_show->agent_show_ajax()
+#3 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_show))
+#4 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team42\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-01 03:33:44 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(TypeError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(TypeError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-01 03:33:45 --> Argument 2 passed to view() must be of the type array, null given, called in C:\xampp\htdocs\code_team42\app\Controllers\Cdms_controller.php on line 58
+#0 C:\xampp\htdocs\code_team42\app\Controllers\Cdms_controller.php(58): view('/template/heade...', NULL)
+#1 C:\xampp\htdocs\code_team42\app\Controllers\Agent_show.php(24): App\Controllers\Cdms_controller->output('v_agent_edit', NULL)
+#2 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(928): App\Controllers\Agent_show->agent_show_ajax()
+#3 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_show))
+#4 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team42\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-01 03:33:45 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(TypeError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(TypeError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-01 03:33:56 --> Argument 2 passed to view() must be of the type array, null given, called in C:\xampp\htdocs\code_team42\app\Controllers\Cdms_controller.php on line 58
+#0 C:\xampp\htdocs\code_team42\app\Controllers\Cdms_controller.php(58): view('/template/heade...', NULL)
+#1 C:\xampp\htdocs\code_team42\app\Controllers\Agent_show.php(24): App\Controllers\Cdms_controller->output('v_agent_edit', NULL)
+#2 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(928): App\Controllers\Agent_show->agent_show_ajax()
+#3 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_show))
+#4 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team42\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-01 03:33:56 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(TypeError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(TypeError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-01 03:34:20 --> Argument 2 passed to view() must be of the type array, null given, called in C:\xampp\htdocs\code_team42\app\Controllers\Cdms_controller.php on line 58
+#0 C:\xampp\htdocs\code_team42\app\Controllers\Cdms_controller.php(58): view('/template/heade...', NULL)
+#1 C:\xampp\htdocs\code_team42\app\Controllers\Agent_show.php(24): App\Controllers\Cdms_controller->output('v_agent_edit', NULL)
+#2 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(928): App\Controllers\Agent_show->agent_show_ajax()
+#3 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_show))
+#4 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team42\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-01 03:34:20 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(TypeError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(TypeError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-01 03:34:20 --> Argument 2 passed to view() must be of the type array, null given, called in C:\xampp\htdocs\code_team42\app\Controllers\Cdms_controller.php on line 58
+#0 C:\xampp\htdocs\code_team42\app\Controllers\Cdms_controller.php(58): view('/template/heade...', NULL)
+#1 C:\xampp\htdocs\code_team42\app\Controllers\Agent_show.php(24): App\Controllers\Cdms_controller->output('v_agent_edit', NULL)
+#2 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(928): App\Controllers\Agent_show->agent_show_ajax()
+#3 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_show))
+#4 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team42\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-01 03:34:20 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(TypeError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(TypeError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-01 03:34:21 --> Argument 2 passed to view() must be of the type array, null given, called in C:\xampp\htdocs\code_team42\app\Controllers\Cdms_controller.php on line 58
+#0 C:\xampp\htdocs\code_team42\app\Controllers\Cdms_controller.php(58): view('/template/heade...', NULL)
+#1 C:\xampp\htdocs\code_team42\app\Controllers\Agent_show.php(24): App\Controllers\Cdms_controller->output('v_agent_edit', NULL)
+#2 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(928): App\Controllers\Agent_show->agent_show_ajax()
+#3 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_show))
+#4 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team42\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-01 03:34:21 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(TypeError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(TypeError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-01 04:08:51 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-01 04:50:30 --> Argument 1 passed to Pusher\Pusher::__construct() must be of the type string, null given, called in C:\xampp\htdocs\code_team42\app\Controllers\Report.php on line 37
+#0 C:\xampp\htdocs\code_team42\app\Controllers\Report.php(37): Pusher\Pusher->__construct(NULL, NULL, '1354801', Array)
+#1 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(928): App\Controllers\Report->process()
+#2 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#3 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team42\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-01 04:50:30 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(TypeError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(TypeError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-01 04:51:39 --> Argument 1 passed to Pusher\Pusher::__construct() must be of the type string, null given, called in C:\xampp\htdocs\code_team42\app\Controllers\Report.php on line 37
+#0 C:\xampp\htdocs\code_team42\app\Controllers\Report.php(37): Pusher\Pusher->__construct(NULL, NULL, '1354801', Array)
+#1 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(928): App\Controllers\Report->process()
+#2 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#3 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team42\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-01 04:51:39 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(TypeError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(TypeError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-01 04:52:42 --> Argument 1 passed to Pusher\Pusher::__construct() must be of the type string, null given, called in C:\xampp\htdocs\code_team42\app\Controllers\Report.php on line 37
+#0 C:\xampp\htdocs\code_team42\app\Controllers\Report.php(37): Pusher\Pusher->__construct(NULL, NULL, '1354801', Array)
+#1 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(928): App\Controllers\Report->process()
+#2 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#3 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team42\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-01 04:52:42 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(TypeError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(TypeError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-01 04:52:45 --> Argument 1 passed to Pusher\Pusher::__construct() must be of the type string, null given, called in C:\xampp\htdocs\code_team42\app\Controllers\Report.php on line 37
+#0 C:\xampp\htdocs\code_team42\app\Controllers\Report.php(37): Pusher\Pusher->__construct(NULL, NULL, '1354801', Array)
+#1 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(928): App\Controllers\Report->process()
+#2 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#3 C:\xampp\htdocs\code_team42\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team42\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-01 04:52:45 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\code_team42\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(TypeError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(TypeError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-01 14:35:12 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-01 14:35:21 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

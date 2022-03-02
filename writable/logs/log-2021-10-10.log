@@ -1,0 +1,82 @@
+ERROR - 2021-10-10 04:46:43 --> Unknown column 'ser_stac_id' in 'on clause'
+CRITICAL - 2021-10-10 04:46:43 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Customer_show.php(49): App\Models\M_cdms_service->get_all()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_show->customer_show_ajax()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_show))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-10-10 04:49:38 --> Unknown column 'ser_status' in 'where clause'
+CRITICAL - 2021-10-10 04:49:38 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Customer_show.php(49): App\Models\M_cdms_service->get_all()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_show->customer_show_ajax()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_show))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-10-10 04:49:40 --> Unknown column 'ser_status' in 'where clause'
+CRITICAL - 2021-10-10 04:49:40 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Customer_show.php(49): App\Models\M_cdms_service->get_all()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_show->customer_show_ajax()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_show))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-10-10 04:50:47 --> Unknown column 'ser_stac_id' in 'on clause'
+CRITICAL - 2021-10-10 04:50:47 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Customer_show.php(49): App\Models\M_cdms_service->get_all()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_show->customer_show_ajax()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_show))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-10 04:53:29 --> Call to undefined function show_add_customer_form()
+#0 C:\xampp\htdocs\code_team4\system\View\View.php(230): include()
+#1 C:\xampp\htdocs\code_team4\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\code_team4\system\Common.php(1271): CodeIgniter\View\View->render('v_customer_inpu...', Array, true)
+#3 C:\xampp\htdocs\code_team4\app\Controllers\Cdms_controller.php(64): view('v_customer_inpu...', Array)
+#4 C:\xampp\htdocs\code_team4\app\Controllers\Customer_input.php(33): App\Controllers\Cdms_controller->output('v_customer_inpu...')
+#5 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_input->customer_input()
+#6 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_input))
+#7 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-10 04:53:39 --> Call to undefined function show_add_customer_form()
+#0 C:\xampp\htdocs\code_team4\system\View\View.php(230): include()
+#1 C:\xampp\htdocs\code_team4\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\code_team4\system\Common.php(1271): CodeIgniter\View\View->render('v_customer_inpu...', Array, true)
+#3 C:\xampp\htdocs\code_team4\app\Controllers\Cdms_controller.php(64): view('v_customer_inpu...', Array)
+#4 C:\xampp\htdocs\code_team4\app\Controllers\Customer_input.php(33): App\Controllers\Cdms_controller->output('v_customer_inpu...')
+#5 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_input->customer_input()
+#6 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_input))
+#7 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-10-10 09:49:15 --> Unknown column 'cont_image' in 'field list'
+ERROR - 2021-10-10 09:49:37 --> Unknown column 'cont_image' in 'field list'
+ERROR - 2021-10-10 09:52:02 --> Unknown column 'cont_image' in 'field list'
+ERROR - 2021-10-10 09:52:22 --> Unknown column 'cont_image' in 'field list'
+CRITICAL - 2021-10-10 09:52:22 --> Too few arguments to function CodeIgniter\HTTP\IncomingRequest::getFile(), 0 passed in C:\xampp\htdocs\code_team4\app\Controllers\Set_up_container_type.php on line 117 and exactly 1 expected
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Set_up_container_type.php(117): CodeIgniter\HTTP\IncomingRequest->getFile()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Set_up_container_type->container_type_insert()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Set_up_container_type))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-10-10 09:52:25 --> Unknown column 'cont_image' in 'field list'
+CRITICAL - 2021-10-10 09:52:25 --> Too few arguments to function CodeIgniter\HTTP\IncomingRequest::getFile(), 0 passed in C:\xampp\htdocs\code_team4\app\Controllers\Set_up_container_type.php on line 117 and exactly 1 expected
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Set_up_container_type.php(117): CodeIgniter\HTTP\IncomingRequest->getFile()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Set_up_container_type->container_type_insert()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Set_up_container_type))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-10-10 09:52:32 --> Unknown column 'cont_image' in 'field list'
+CRITICAL - 2021-10-10 09:52:32 --> Too few arguments to function CodeIgniter\HTTP\IncomingRequest::getFile(), 0 passed in C:\xampp\htdocs\code_team4\app\Controllers\Set_up_container_type.php on line 117 and exactly 1 expected
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Set_up_container_type.php(117): CodeIgniter\HTTP\IncomingRequest->getFile()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Set_up_container_type->container_type_insert()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Set_up_container_type))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-10-10 09:53:45 --> Unknown column 'cont_image' in 'field list'

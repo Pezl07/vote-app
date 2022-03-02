@@ -1,0 +1,46 @@
+CRITICAL - 2022-01-04 07:21:22 --> count(): Parameter must be an array or an object that implements Countable
+#0 C:\xampp\htdocs\code_team4\app\Views\v_damaged_container_showlist.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 254, Array)
+#1 C:\xampp\htdocs\code_team4\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\code_team4\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\code_team4\system\Common.php(1271): CodeIgniter\View\View->render('v_damaged_conta...', Array, true)
+#4 C:\xampp\htdocs\code_team4\app\Controllers\Cdms_controller.php(59): view('v_damaged_conta...', Array)
+#5 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(597): App\Controllers\Cdms_controller->output('v_damaged_conta...', Array)
+#6 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->service_damaged_show_ajax()
+#7 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#8 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-04 07:21:30 --> count(): Parameter must be an array or an object that implements Countable
+#0 C:\xampp\htdocs\code_team4\app\Views\v_damaged_container_showlist.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 254, Array)
+#1 C:\xampp\htdocs\code_team4\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\code_team4\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\code_team4\system\Common.php(1271): CodeIgniter\View\View->render('v_damaged_conta...', Array, true)
+#4 C:\xampp\htdocs\code_team4\app\Controllers\Cdms_controller.php(59): view('v_damaged_conta...', Array)
+#5 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(597): App\Controllers\Cdms_controller->output('v_damaged_conta...', Array)
+#6 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->service_damaged_show_ajax()
+#7 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#8 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-04 07:23:49 --> count(): Parameter must be an array or an object that implements Countable
+#0 C:\xampp\htdocs\code_team4\app\Views\v_damaged_container_showlist.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 254, Array)
+#1 C:\xampp\htdocs\code_team4\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\code_team4\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\code_team4\system\Common.php(1271): CodeIgniter\View\View->render('v_damaged_conta...', Array, true)
+#4 C:\xampp\htdocs\code_team4\app\Controllers\Cdms_controller.php(59): view('v_damaged_conta...', Array)
+#5 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(599): App\Controllers\Cdms_controller->output('v_damaged_conta...', Array)
+#6 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->service_damaged_show_ajax()
+#7 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#8 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-04 09:00:55 --> Invalid file: .php
+#0 C:\xampp\htdocs\code_team4\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('.php')
+#1 C:\xampp\htdocs\code_team4\system\Common.php(1271): CodeIgniter\View\View->render('', Array, true)
+#2 C:\xampp\htdocs\code_team4\app\Controllers\Cdms_controller.php(59): view('', Array)
+#3 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(605): App\Controllers\Cdms_controller->output()
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->service_damaged_show_ajax2()
+#5 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#6 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

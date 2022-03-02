@@ -1,0 +1,127 @@
+CRITICAL - 2021-11-02 11:56:34 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 8, Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Test_323.php(8): count('Hello')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Test_323->says()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test_323))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-02 11:59:31 --> syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ';' or ','
+#0 C:\xampp\htdocs\code_team4\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('Test_323/says')
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(809): CodeIgniter\Router\Router->handle('Test_323/says')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-02 12:04:03 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+#0 C:\xampp\htdocs\code_team4\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('Test_323/Count_...')
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(809): CodeIgniter\Router\Router->handle('Test_323/Count_...')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-02 12:05:19 --> syntax error, unexpected '$this' (T_VARIABLE), expecting ';' or ','
+#0 C:\xampp\htdocs\code_team4\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('Test_323/show')
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(809): CodeIgniter\Router\Router->handle('Test_323/show')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-02 12:23:21 --> Cannot redeclare App\Controllers\Test_323::Replace_Str()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-02 12:23:58 --> syntax error, unexpected '"<br>"' (T_CONSTANT_ENCAPSED_STRING), expecting ';' or ','
+#0 C:\xampp\htdocs\code_team4\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('Test_323/show')
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(809): CodeIgniter\Router\Router->handle('Test_323/show')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-02 12:24:06 --> A non-numeric value encountered
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Test_323.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\xampp\\htdocs...', 74, Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Test_323.php(18): App\Controllers\Test_323->Sub_Str()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Test_323->show()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test_323))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-02 12:24:08 --> A non-numeric value encountered
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Test_323.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\xampp\\htdocs...', 74, Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Test_323.php(18): App\Controllers\Test_323->Sub_Str()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Test_323->show()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test_323))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-02 12:27:15 --> Use of undefined constant parts - assumed 'parts' (this will throw an Error in a future version of PHP)
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Test_323.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 75, Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Test_323.php(18): App\Controllers\Test_323->Sub_Str()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Test_323->show()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test_323))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-02 12:27:24 --> Use of undefined constant parts - assumed 'parts' (this will throw an Error in a future version of PHP)
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Test_323.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 75, Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Test_323.php(18): App\Controllers\Test_323->Sub_Str()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Test_323->show()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test_323))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-02 12:36:38 --> syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ','
+#0 C:\xampp\htdocs\code_team4\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('Test_323/show')
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(809): CodeIgniter\Router\Router->handle('Test_323/show')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-02 12:53:40 --> syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ','
+#0 C:\xampp\htdocs\code_team4\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('Example_array/s...')
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(809): CodeIgniter\Router\Router->handle('Example_array/s...')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-02 13:08:16 --> Cannot redeclare App\Controllers\Example_array::Show_arr()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-02 13:09:16 --> syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ','
+#0 C:\xampp\htdocs\code_team4\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('Example_array/s...')
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(809): CodeIgniter\Router\Router->handle('Example_array/s...')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-02 13:11:14 --> Cannot redeclare App\Controllers\Example_array::Sort_arr()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-02 13:21:33 --> Cannot redeclare App\Controllers\Example_array::DesSort_arr()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-02 13:23:21 --> syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ','
+#0 C:\xampp\htdocs\code_team4\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('Example_array/s...')
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(809): CodeIgniter\Router\Router->handle('Example_array/s...')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-02 13:26:00 --> Cannot redeclare App\Controllers\Example_array::ValueSort_arr()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-02 13:36:47 --> Cannot redeclare App\Controllers\Example_array::Sum_arr()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-02 13:40:22 --> syntax error, unexpected '}', expecting ';' or ','
+#0 C:\xampp\htdocs\code_team4\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('Example_array/s...')
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(809): CodeIgniter\Router\Router->handle('Example_array/s...')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-02 13:44:58 --> Cannot redeclare App\Controllers\Example_array::Max_arr()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-02 14:01:57 --> Cannot redeclare App\Controllers\Example_php::Replace_Str()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

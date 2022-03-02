@@ -1,0 +1,30 @@
+CRITICAL - 2021-10-08 09:00:38 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Car_input->car_insert()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Car_input))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-10-08 09:02:11 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Car_input->car_insert()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Car_input))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-10-08 09:04:11 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Car_input->car_insert()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Car_input))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-10-08 09:05:55 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Car_input->car_insert()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Car_input))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-10-08 09:09:12 --> Column count doesn't match value count at row 1
+ERROR - 2021-10-08 09:10:00 --> Column count doesn't match value count at row 1
+ERROR - 2021-10-08 09:14:12 --> Column count doesn't match value count at row 1
+ERROR - 2021-10-08 09:17:21 --> Column count doesn't match value count at row 1
+ERROR - 2021-10-08 09:18:02 --> Column count doesn't match value count at row 1
+ERROR - 2021-10-08 09:19:10 --> Column count doesn't match value count at row 1

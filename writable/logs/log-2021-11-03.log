@@ -1,0 +1,21 @@
+CRITICAL - 2021-11-03 02:49:23 --> syntax error, unexpected ')'
+#0 C:\xampp\htdocs\code_team4\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('backend02/index')
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(809): CodeIgniter\Router\Router->handle('backend02/index')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-03 03:02:07 --> syntax error, unexpected ')'
+#0 C:\xampp\htdocs\code_team4\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('backend03/index')
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(809): CodeIgniter\Router\Router->handle('backend03/index')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-03 03:30:34 --> syntax error, unexpected '='
+#0 C:\xampp\htdocs\code_team4\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('backend05/index')
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(809): CodeIgniter\Router\Router->handle('backend05/index')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

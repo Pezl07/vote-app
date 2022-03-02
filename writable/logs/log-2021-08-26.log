@@ -1,0 +1,35 @@
+CRITICAL - 2021-08-26 05:13:20 --> Call to undefined method App\Models\M_cdms_agent::agent_insert
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Agent_input.php(63): CodeIgniter\Model->__call('agent_insert', Array)
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Agent_input->agent_insert()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_input))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-26 05:13:28 --> Call to undefined method App\Models\M_cdms_agent::agent_insert
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Agent_input.php(63): CodeIgniter\Model->__call('agent_insert', Array)
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Agent_input->agent_insert()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_input))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-26 05:13:49 --> Call to undefined method App\Models\M_cdms_agent::agent_insert
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Agent_input.php(63): CodeIgniter\Model->__call('agent_insert', Array)
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Agent_input->agent_insert()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_input))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-26 05:31:33 --> Call to undefined method App\Models\M_cdms_agent::agent_insert
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Agent_input.php(63): CodeIgniter\Model->__call('agent_insert', Array)
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Agent_input->agent_insert()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_input))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-26 10:24:47 --> Call to undefined method App\Models\M_cdms_agent::agent_insert
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Agent_input.php(63): CodeIgniter\Model->__call('agent_insert', Array)
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Agent_input->agent_insert()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agent_input))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

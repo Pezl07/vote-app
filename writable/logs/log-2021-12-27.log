@@ -1,0 +1,24 @@
+CRITICAL - 2021-12-27 21:04:07 --> count(): Parameter must be an array or an object that implements Countable
+#0 C:\xampp\htdocs\code_team4\app\Views\v_service_showlist.php(245): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 245, Array)
+#1 C:\xampp\htdocs\code_team4\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\code_team4\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\code_team4\system\Common.php(1271): CodeIgniter\View\View->render('v_service_showl...', Array, true)
+#4 C:\xampp\htdocs\code_team4\app\Controllers\Cdms_controller.php(59): view('v_service_showl...', Array)
+#5 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(126): App\Controllers\Cdms_controller->output('v_service_showl...', Array)
+#6 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->service_show_ajax()
+#7 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#8 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-27 21:16:28 --> count(): Parameter must be an array or an object that implements Countable
+#0 C:\xampp\htdocs\code_team4\app\Views\v_service_showlist.php(239): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 239, Array)
+#1 C:\xampp\htdocs\code_team4\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\code_team4\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\code_team4\system\Common.php(1271): CodeIgniter\View\View->render('v_service_showl...', Array, true)
+#4 C:\xampp\htdocs\code_team4\app\Controllers\Cdms_controller.php(59): view('v_service_showl...', Array)
+#5 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(126): App\Controllers\Cdms_controller->output('v_service_showl...', Array)
+#6 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->service_show_ajax()
+#7 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#8 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}

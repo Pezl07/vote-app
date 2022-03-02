@@ -1,0 +1,48 @@
+ERROR - 2021-07-29 04:34:33 --> Unknown column 'ser_type' in 'field list'
+CRITICAL - 2021-07-29 04:34:33 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(10): App\Models\M_cdms_service->get_all()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->service_show_ajax()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-07-29 04:34:48 --> Unknown column 'ser_type' in 'field list'
+CRITICAL - 2021-07-29 04:34:48 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(10): App\Models\M_cdms_service->get_all()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->service_show_ajax()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-07-29 04:35:32 --> Unknown column 'ser_type' in 'field list'
+CRITICAL - 2021-07-29 04:35:32 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(10): App\Models\M_cdms_service->get_all()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->service_show_ajax()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-07-29 04:38:50 --> Unknown column 'ser_type' in 'field list'
+CRITICAL - 2021-07-29 04:38:50 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(10): App\Models\M_cdms_service->get_all()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->service_show_ajax()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-07-29 04:38:51 --> Unknown column 'ser_type' in 'field list'
+CRITICAL - 2021-07-29 04:38:51 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(10): App\Models\M_cdms_service->get_all()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->service_show_ajax()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-29 09:32:31 --> Class 'App\Controllers\T4MNG_Controller' not found
+#0 C:\xampp\htdocs\code_team4\system\Router\Router.php(566): include_once()
+#1 C:\xampp\htdocs\code_team4\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('Dashboard')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(809): CodeIgniter\Router\Router->handle('Dashboard')
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
