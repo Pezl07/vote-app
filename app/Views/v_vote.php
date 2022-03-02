@@ -85,7 +85,6 @@
                 <p>3. กดปุ่ม "Confirm Vote" เพื่อโหวต หรือกด "Cancel" เพื่อยกเลิก</p>
                 <p>4. สามารถโหวตได้หลายครั้ง ถ้ายังมีแต้มเหลืออยู่</p>
                 <p>5. หากกดปุ่ม "Confirm Vote" แล้ว ท่านไม่สามารถเปลี่ยนแปลงผลการโหวตได้</p>
-                <?= "session : " . $vote_status ?>
             </div>
         </form>
     </main>
@@ -212,7 +211,6 @@
             },
         };
     </script>
-
 
     <script src="<?= base_url() . "/assets/vendors/bootstrap/bootstrap.min.js"?>"></script>
     <script src="<?= base_url() . "/assets/vendors/is/is.min.js"?>"></script>

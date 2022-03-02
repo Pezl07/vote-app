@@ -40,24 +40,24 @@ class Report extends Cdms_controller {
     }
 
     public function process() {
-        $obj_score_input =  $this->request->getPost("score_input_cluster");
-    
-        // echo "Cluster : " . $obj['cluster'] . '<br>';
-        // echo "Score : " . $obj['score'] . '<br>';
-        // echo "<pre>";
-        // print_r($obj_score_input);
-        // echo "</pre>";
+        $arr_score_input =  $this->request->getPost("score_input_cluster");
 
         $number = mt_rand(0,1);
         if($number == 0) {
-            $this->process1($obj_score_input);
+            $this->process1($arr_score_input);
         }
         else {
-            $this->process2($obj_score_input);
+            $this->process2($arr_score_input);
         }
 
-        $data["vote_status"] = "success";
+        $sum_score = array_sum($arr_score_input);
+        if ($this->check_score_enough($sum_score))
+            return $this->response->redirect(base_url() . "/Report/index/success");
         return $this->response->redirect(base_url() . "/Report/index/success");
+    }
+    public function check_score_enough($score) {
+        $user_score = 500;
+        return ($user_score < $score);
     }
 
     public function process1($obj_score_input) {
