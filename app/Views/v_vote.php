@@ -47,7 +47,7 @@
                     </ul>
                 </div>
             </div>
-      </nav>
+        </nav>
         
         <form id="vote_form" action="<?= base_url() . "/Report/process"?>" method="POST">
             <div class="container">

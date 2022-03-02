@@ -1,42 +1,24 @@
 <?php
 namespace App\Controllers;
-
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
-use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
-use PhpOffice\PhpSpreadsheet\Style\Alignment;
 use Pusher\Pusher;
 
-/*
-* Agent_show
-* show agent list, delete anget
-* @author   Klayuth, Preechaya
-* @Create Date  2564-07-30
-*/
 class Report extends Cdms_controller {
-    /*
-    * agent_show_ajax
-    * show agent list
-    * @input    -
-    * @output   array of agent
-    * @author   Klayuth
-    * @Create Date  2564-07-30
-    */
+
     public function show_report() {
-        // $this->output('v_report'); // Chart.js
-        $this->output('v_test'); // amCharts 5 
+        echo view('v_report');
     }
 
     public function index($vote_status = NULL) {
         if ($vote_status == NULL)
             $vote_status = "test";
- 
+
         $data["vote_status"] = $vote_status;
 
         echo view("v_vote", $data);
     }
 
     public function show_input() {
-        $this->output('v_input');
+        echo view('v_input');
     }
 
     public function process() {

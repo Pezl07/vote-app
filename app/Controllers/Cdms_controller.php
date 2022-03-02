@@ -45,18 +45,4 @@ class Cdms_controller extends Controller
 		parent::initController($request, $response, $logger);
 	}
 
-	/*
-    * output
-    * แสดงหน้าจอ แบบมี Template Header Footer
-    * @input -
-    * @output แสดงหน้าจอ View พร้อม Header Footer
-    * @author Wirat
-    * @Create Date 2564-07-28
-    * @Update Date 2564-07-28
-    */
-	public function output($views = '', $data = []) {
-		echo view('/template/header', $data);
-		echo view($views, $data);
-		echo view('/template/footer', $data);
-	}
 }

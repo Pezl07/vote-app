@@ -8,7 +8,7 @@ class Login extends Cdms_controller {
 
     public function login_show() {
         // session_start();
-        echo view('v_login.php');
+        echo view('v_new_login.php');
     }
 
 
@@ -36,9 +36,4 @@ class Login extends Cdms_controller {
         }
     }
 
-    // public function logout(){
-    //     session_start();
-    //     session_destroy();
-    //     return $this->response->redirect(base_url('/Login_show/login_show_ajax'));
-    // }
 }
