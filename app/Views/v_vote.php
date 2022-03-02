@@ -28,7 +28,7 @@
 </head>
 <body>
     <main class="main" id="top">
-        <nav class="navbar navbar-expand-lg navbar-light sticky-top" data-navbar-on-scroll="data-navbar-on-scroll" style="background-color: rgba(255,255,255,0.97); box-shadow: 1px 1px 5px 3px rgba(100,100,100,0.1)">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top" data-navbar-on-scroll="data-navbar-on-scroll" style="box-shadow: 1px 1px 5px 3px rgba(100,100,100)">
             <div class="container">
                 <img class="me-3" src="https://dummyimage.com/40x40/000/fff" alt="">
                 <a class="navbar-brand" href="<?= base_url() . "/Vote"?>">ระบบโหวต</a>
@@ -44,7 +44,7 @@
             </div>
       </nav>
         
-        <form id="vote_form" action="<?= base_url() . "/Vote/voting"?>" method="POST">
+        <form id="vote_form" action="<?= base_url() . "/Report/process"?>" method="POST">
             <div class="container">
                 <center><h1 class="mt-5">โหวตมกุลที่ท่านชื่นชอบ</h1></center>
                 <div class="row">

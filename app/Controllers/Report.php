@@ -37,17 +37,20 @@ class Report extends Cdms_controller {
     public function process() {
         $obj =  $this->request->getPost();
     
-        echo "Cluster : " . $obj['cluster'] . '<br>';
-        echo "Score : " . $obj['score'] . '<br>';
+        // echo "Cluster : " . $obj['cluster'] . '<br>';
+        // echo "Score : " . $obj['score'] . '<br>';
+        echo "<pre>";
+        print_r($obj);
+        echo "</pre>";
 
-        $number = mt_rand(0,1);    // $this->show_input();
-        if($number == 0){
-            $this->process1($obj['cluster'], $obj['score']);
-            echo '1';
-        }else{
-            $this->process2($obj['cluster'], $obj['score']);
-            echo '2';
-        }
+        // $number = mt_rand(0,1);    // $this->show_input();
+        // if($number == 0){
+        //     $this->process1($obj['cluster'], $obj['score']);
+        //     echo '1';
+        // }else{
+        //     $this->process2($obj['cluster'], $obj['score']);
+        //     echo '2';
+        // }
 
     }
 
