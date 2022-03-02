@@ -1,0 +1,24 @@
+CRITICAL - 2021-10-18 10:14:24 --> Argument 1 passed to datetime_format_value() must be of the type string, null given, called in C:\xampp\htdocs\code_team4\app\Views\v_service_edit.php on line 300
+#0 C:\xampp\htdocs\code_team4\app\Views\v_service_edit.php(300): datetime_format_value(NULL)
+#1 C:\xampp\htdocs\code_team4\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\code_team4\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\code_team4\system\Common.php(1271): CodeIgniter\View\View->render('v_service_edit', Array, true)
+#4 C:\xampp\htdocs\code_team4\app\Controllers\Cdms_controller.php(64): view('v_service_edit', Array)
+#5 C:\xampp\htdocs\code_team4\app\Controllers\Service_edit.php(88): App\Controllers\Cdms_controller->output('v_service_edit', Array)
+#6 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_edit->service_edit('5')
+#7 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_edit))
+#8 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-10-18 10:15:03 --> Argument 1 passed to datetime_format_value() must be of the type string, null given, called in C:\xampp\htdocs\code_team4\app\Views\v_service_edit.php on line 300
+#0 C:\xampp\htdocs\code_team4\app\Views\v_service_edit.php(300): datetime_format_value(NULL)
+#1 C:\xampp\htdocs\code_team4\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\code_team4\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\code_team4\system\Common.php(1271): CodeIgniter\View\View->render('v_service_edit', Array, true)
+#4 C:\xampp\htdocs\code_team4\app\Controllers\Cdms_controller.php(64): view('v_service_edit', Array)
+#5 C:\xampp\htdocs\code_team4\app\Controllers\Service_edit.php(88): App\Controllers\Cdms_controller->output('v_service_edit', Array)
+#6 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_edit->service_edit('5')
+#7 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_edit))
+#8 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}

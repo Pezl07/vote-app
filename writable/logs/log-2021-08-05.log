@@ -1,0 +1,10 @@
+CRITICAL - 2021-08-05 12:12:00 --> Invalid file: v_customer_input.php
+#0 C:\xampp\htdocs\code_team4\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_customer_inpu...')
+#1 C:\xampp\htdocs\code_team4\system\Common.php(1271): CodeIgniter\View\View->render('v_customer_inpu...', Array, true)
+#2 C:\xampp\htdocs\code_team4\app\Controllers\Cdms_controller.php(55): view('v_customer_inpu...', Array)
+#3 C:\xampp\htdocs\code_team4\app\Controllers\Customer_input.php(22): App\Controllers\Cdms_controller->output('v_customer_inpu...')
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_input->customer_input()
+#5 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_input))
+#6 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

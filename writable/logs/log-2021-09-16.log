@@ -1,0 +1,6 @@
+CRITICAL - 2021-09-16 00:23:53 --> Class 'App\ThirdParty\PhpOffice\PhpSpreadsheet\Spreadsheet' not found
+#0 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->export_service()
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

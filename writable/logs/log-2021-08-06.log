@@ -1,0 +1,135 @@
+CRITICAL - 2021-08-06 07:12:01 --> array_count_values(): Can only count STRING and INTEGER values!
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_count_val...', 'C:\\xampp\\htdocs...', 50, Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Customer_input.php(50): array_count_values(Array)
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_input->customer_insert()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_input))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-06 07:12:25 --> array_count_values(): Can only count STRING and INTEGER values!
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_count_val...', 'C:\\xampp\\htdocs...', 50, Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Customer_input.php(50): array_count_values(Array)
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_input->customer_insert()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_input))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-06 07:14:22 --> array_count_values(): Can only count STRING and INTEGER values!
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_count_val...', 'C:\\xampp\\htdocs...', 50, Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Customer_input.php(50): array_count_values(Array)
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_input->customer_insert()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_input))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-06 07:15:39 --> array_count_values(): Can only count STRING and INTEGER values!
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_count_val...', 'C:\\xampp\\htdocs...', 53, Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Customer_input.php(53): array_count_values(Array)
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_input->customer_insert()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_input))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-06 07:17:06 --> array_count_values(): Can only count STRING and INTEGER values!
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_count_val...', 'C:\\xampp\\htdocs...', 52, Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Customer_input.php(52): array_count_values(Array)
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_input->customer_insert()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_input))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-06 07:21:09 --> array_count_values(): Can only count STRING and INTEGER values!
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_count_val...', 'C:\\xampp\\htdocs...', 51, Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Customer_input.php(51): array_count_values(Array)
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_input->customer_insert()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_input))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-06 07:22:48 --> array_count_values(): Can only count STRING and INTEGER values!
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_count_val...', 'C:\\xampp\\htdocs...', 55, Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Customer_input.php(55): array_count_values(Array)
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_input->customer_insert()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_input))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-06 07:26:19 --> array_count_values(): Can only count STRING and INTEGER values!
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_count_val...', 'C:\\xampp\\htdocs...', 55, Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Customer_input.php(55): array_count_values(Array)
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_input->customer_insert()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_input))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-06 07:28:10 --> array_count_values(): Can only count STRING and INTEGER values!
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_count_val...', 'C:\\xampp\\htdocs...', 51, Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Customer_input.php(51): array_count_values(Array)
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_input->customer_insert()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_input))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-06 07:35:15 --> array_count_values(): Can only count STRING and INTEGER values!
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_count_val...', 'C:\\xampp\\htdocs...', 52, Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Customer_input.php(52): array_count_values(Array)
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_input->customer_insert()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_input))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-06 07:48:02 --> syntax error, unexpected 'echo' (T_ECHO)
+#0 C:\xampp\htdocs\code_team4\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('Customer_input/...')
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(809): CodeIgniter\Router\Router->handle('Customer_input/...')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-06 07:48:06 --> syntax error, unexpected 'echo' (T_ECHO)
+#0 C:\xampp\htdocs\code_team4\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('Customer_input/...')
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(809): CodeIgniter\Router\Router->handle('Customer_input/...')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-06 07:52:38 --> Use of undefined constant ว่าง - assumed 'ว่าง' (this will throw an Error in a future version of PHP)
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Customer_input.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 52, Array)
+#1 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_input->customer_insert()
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_input))
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-08-06 08:22:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= '') ? NULL : '','0815752307','บางละมุง','1245464756867','el...' at line 3
+ERROR - 2021-08-06 08:22:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= '') ? NULL : '','0815752307','บางละมุง','1245464756867','el...' at line 3
+ERROR - 2021-08-06 08:23:13 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''0815752307','บางละมุง','1245464756867','elon@tesla.com')' at line 3
+CRITICAL - 2021-08-06 09:13:27 --> Class 'App\Controllers\T4MNG_Controller' not found
+#0 C:\xampp\htdocs\code_team4\system\Router\Router.php(566): include_once()
+#1 C:\xampp\htdocs\code_team4\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('Dashboard/show_...')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(809): CodeIgniter\Router\Router->handle('Dashboard/show_...')
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-06 09:51:29 --> Cannot redeclare App\Models\Da_cdms_customer::insert()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-06 09:51:30 --> Cannot redeclare App\Models\Da_cdms_customer::insert()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-06 09:51:37 --> Declaration of App\Models\Da_cdms_customer::update($cus_id = NULL, $cus_company_name = NULL, $cus_firstname = NULL, $cus_lastname = NULL, $cus_branch = NULL, $cus_tel = NULL, $cus_address = NULL, $cus_tax = NULL, $cus_email = NULL) must be compatible with CodeIgniter\Model::update($id = NULL, $data = NULL): bool
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-06 09:51:38 --> Declaration of App\Models\Da_cdms_customer::update($cus_id = NULL, $cus_company_name = NULL, $cus_firstname = NULL, $cus_lastname = NULL, $cus_branch = NULL, $cus_tel = NULL, $cus_address = NULL, $cus_tax = NULL, $cus_email = NULL) must be compatible with CodeIgniter\Model::update($id = NULL, $data = NULL): bool
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-06 09:51:39 --> Declaration of App\Models\Da_cdms_customer::update($cus_id = NULL, $cus_company_name = NULL, $cus_firstname = NULL, $cus_lastname = NULL, $cus_branch = NULL, $cus_tel = NULL, $cus_address = NULL, $cus_tax = NULL, $cus_email = NULL) must be compatible with CodeIgniter\Model::update($id = NULL, $data = NULL): bool
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-06 13:20:25 --> Class 'App\Controllers\T4MNG_Controller' not found
+#0 C:\xampp\htdocs\code_team4\system\Router\Router.php(566): include_once()
+#1 C:\xampp\htdocs\code_team4\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('Dashboard/show_...')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(809): CodeIgniter\Router\Router->handle('Dashboard/show_...')
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

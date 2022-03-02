@@ -1,0 +1,171 @@
+ERROR - 2021-11-08 05:34:01 --> Error connecting to the database: Unknown database 'container drop management system'
+CRITICAL - 2021-11-08 05:34:01 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'container drop management system'
+#0 C:\xampp\htdocs\code_team4\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\code_team4\app\Models\M_cdms_customer.php(38): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#2 C:\xampp\htdocs\code_team4\app\Controllers\Customer_show.php(47): App\Models\M_cdms_customer->get_all()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_show->customer_show_ajax()
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_show))
+#5 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-11-08 05:34:56 --> Error connecting to the database: Unknown database 'container drop management system'
+CRITICAL - 2021-11-08 05:34:56 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'container drop management system'
+#0 C:\xampp\htdocs\code_team4\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\code_team4\app\Models\M_cdms_customer.php(38): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#2 C:\xampp\htdocs\code_team4\app\Controllers\Customer_show.php(47): App\Models\M_cdms_customer->get_all()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_show->customer_show_ajax()
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_show))
+#5 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-11-08 05:34:58 --> Error connecting to the database: Unknown database 'container drop management system'
+CRITICAL - 2021-11-08 05:34:58 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'container drop management system'
+#0 C:\xampp\htdocs\code_team4\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\code_team4\app\Models\M_cdms_customer.php(38): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#2 C:\xampp\htdocs\code_team4\app\Controllers\Customer_show.php(47): App\Models\M_cdms_customer->get_all()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_show->customer_show_ajax()
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_show))
+#5 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-11-08 05:34:59 --> Error connecting to the database: Unknown database 'container drop management system'
+CRITICAL - 2021-11-08 05:34:59 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'container drop management system'
+#0 C:\xampp\htdocs\code_team4\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\code_team4\app\Models\M_cdms_customer.php(38): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#2 C:\xampp\htdocs\code_team4\app\Controllers\Customer_show.php(47): App\Models\M_cdms_customer->get_all()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_show->customer_show_ajax()
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_show))
+#5 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-11-08 05:34:59 --> Error connecting to the database: Unknown database 'container drop management system'
+CRITICAL - 2021-11-08 05:34:59 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'container drop management system'
+#0 C:\xampp\htdocs\code_team4\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\code_team4\app\Models\M_cdms_customer.php(38): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#2 C:\xampp\htdocs\code_team4\app\Controllers\Customer_show.php(47): App\Models\M_cdms_customer->get_all()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_show->customer_show_ajax()
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_show))
+#5 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-11-08 05:34:59 --> Error connecting to the database: Unknown database 'container drop management system'
+CRITICAL - 2021-11-08 05:34:59 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'container drop management system'
+#0 C:\xampp\htdocs\code_team4\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\code_team4\app\Models\M_cdms_customer.php(38): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#2 C:\xampp\htdocs\code_team4\app\Controllers\Customer_show.php(47): App\Models\M_cdms_customer->get_all()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_show->customer_show_ajax()
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_show))
+#5 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-11-08 05:34:59 --> Error connecting to the database: Unknown database 'container drop management system'
+CRITICAL - 2021-11-08 05:34:59 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'container drop management system'
+#0 C:\xampp\htdocs\code_team4\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\code_team4\app\Models\M_cdms_customer.php(38): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#2 C:\xampp\htdocs\code_team4\app\Controllers\Customer_show.php(47): App\Models\M_cdms_customer->get_all()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_show->customer_show_ajax()
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_show))
+#5 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-11-08 05:35:00 --> Error connecting to the database: Unknown database 'container drop management system'
+CRITICAL - 2021-11-08 05:35:00 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'container drop management system'
+#0 C:\xampp\htdocs\code_team4\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\code_team4\app\Models\M_cdms_customer.php(38): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#2 C:\xampp\htdocs\code_team4\app\Controllers\Customer_show.php(47): App\Models\M_cdms_customer->get_all()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_show->customer_show_ajax()
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_show))
+#5 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-11-08 05:35:00 --> Error connecting to the database: Unknown database 'container drop management system'
+CRITICAL - 2021-11-08 05:35:00 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'container drop management system'
+#0 C:\xampp\htdocs\code_team4\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\code_team4\app\Models\M_cdms_customer.php(38): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#2 C:\xampp\htdocs\code_team4\app\Controllers\Customer_show.php(47): App\Models\M_cdms_customer->get_all()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_show->customer_show_ajax()
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_show))
+#5 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-11-08 05:35:00 --> Error connecting to the database: Unknown database 'container drop management system'
+CRITICAL - 2021-11-08 05:35:00 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'container drop management system'
+#0 C:\xampp\htdocs\code_team4\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\code_team4\app\Models\M_cdms_customer.php(38): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#2 C:\xampp\htdocs\code_team4\app\Controllers\Customer_show.php(47): App\Models\M_cdms_customer->get_all()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_show->customer_show_ajax()
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_show))
+#5 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-11-08 06:03:11 --> Error connecting to the database: Unknown database 'container drop management system'
+CRITICAL - 2021-11-08 06:03:11 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'container drop management system'
+#0 C:\xampp\htdocs\code_team4\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\code_team4\app\Models\M_cdms_customer.php(38): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#2 C:\xampp\htdocs\code_team4\app\Controllers\Customer_show.php(47): App\Models\M_cdms_customer->get_all()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_show->customer_show_ajax()
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_show))
+#5 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-11-08 06:03:15 --> Error connecting to the database: Unknown database 'container drop management system'
+CRITICAL - 2021-11-08 06:03:15 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'container drop management system'
+#0 C:\xampp\htdocs\code_team4\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\code_team4\app\Models\M_cdms_customer.php(38): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#2 C:\xampp\htdocs\code_team4\app\Controllers\Customer_show.php(47): App\Models\M_cdms_customer->get_all()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_show->customer_show_ajax()
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_show))
+#5 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-11-08 06:03:29 --> Error connecting to the database: Unknown database 'container drop management system'
+CRITICAL - 2021-11-08 06:03:29 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'container drop management system'
+#0 C:\xampp\htdocs\code_team4\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\code_team4\app\Models\M_cdms_customer.php(38): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#2 C:\xampp\htdocs\code_team4\app\Controllers\Customer_show.php(47): App\Models\M_cdms_customer->get_all()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_show->customer_show_ajax()
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_show))
+#5 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-11-08 06:03:33 --> Error connecting to the database: Unknown database 'container drop management system'
+CRITICAL - 2021-11-08 06:03:33 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'container drop management system'
+#0 C:\xampp\htdocs\code_team4\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\code_team4\app\Models\M_cdms_customer.php(38): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#2 C:\xampp\htdocs\code_team4\app\Controllers\Customer_show.php(47): App\Models\M_cdms_customer->get_all()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_show->customer_show_ajax()
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_show))
+#5 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-11-08 06:08:51 --> Error connecting to the database: Unknown database 'container drop management system'
+CRITICAL - 2021-11-08 06:08:51 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'container drop management system'
+#0 C:\xampp\htdocs\code_team4\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\code_team4\app\Models\M_cdms_customer.php(38): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#2 C:\xampp\htdocs\code_team4\app\Controllers\Customer_show.php(47): App\Models\M_cdms_customer->get_all()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Customer_show->customer_show_ajax()
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer_show))
+#5 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-08 10:02:59 --> CodeIgniter\View\View::main(): Failed opening required 'set_up_jump_to.php' (include_path='C:\xampp\php\PEAR')
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-08 10:32:52 --> CodeIgniter\View\View::main(): Failed opening required 'set_up_jump_to.php' (include_path='C:\xampp\php\PEAR')
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

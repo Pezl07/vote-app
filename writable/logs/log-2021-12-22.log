@@ -1,0 +1,16 @@
+CRITICAL - 2021-12-22 10:11:25 --> json_encode() expects at most 3 parameters, 4 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'json_encode() e...', 'C:\\xampp\\htdocs...', 755, Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(755): json_encode(NULL, '22/12/2021', '1', '')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->ser_pay_update()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-22 10:11:29 --> json_encode() expects at most 3 parameters, 4 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'json_encode() e...', 'C:\\xampp\\htdocs...', 755, Array)
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(755): json_encode('26', '22/12/2021', '3', '')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->ser_pay_update()
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

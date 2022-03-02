@@ -1,0 +1,64 @@
+ERROR - 2021-12-09 06:25:41 --> Table 'container drop management system.cdms_change_container_log' doesn't exist
+CRITICAL - 2021-12-09 06:25:41 --> Call to a member function getRow() on bool
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(483): App\Models\M_cdms_change_container_log->get_next_ser_id('26')
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(183): App\Controllers\Service_show->get_change_container_log('26')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->service_detail('26')
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-09 12:33:14 --> syntax error, unexpected ')', expecting ';' or ','
+#0 C:\xampp\htdocs\code_team4\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\code_team4\system\Common.php(1271): CodeIgniter\View\View->render('v_service_showl...', Array, true)
+#2 C:\xampp\htdocs\code_team4\app\Controllers\Cdms_controller.php(59): view('v_service_showl...', Array)
+#3 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(117): App\Controllers\Cdms_controller->output('v_service_showl...', Array)
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->service_show_ajax()
+#5 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#6 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-12-09 08:15:51 --> Table 'container drop management system.cdms_change_container_log' doesn't exist
+CRITICAL - 2021-12-09 08:15:51 --> Call to a member function getRow() on bool
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(483): App\Models\M_cdms_change_container_log->get_next_ser_id('26')
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(183): App\Controllers\Service_show->get_change_container_log('26')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->service_detail('26')
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-12-09 08:16:00 --> Table 'container drop management system.cdms_change_container_log' doesn't exist
+CRITICAL - 2021-12-09 08:16:00 --> Call to a member function getRow() on bool
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(483): App\Models\M_cdms_change_container_log->get_next_ser_id('26')
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(183): App\Controllers\Service_show->get_change_container_log('26')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->service_detail('26')
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-12-09 08:29:28 --> Table 'container drop management system.cdms_change_container_log' doesn't exist
+CRITICAL - 2021-12-09 08:29:28 --> Call to a member function getRow() on bool
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(483): App\Models\M_cdms_change_container_log->get_next_ser_id('26')
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(183): App\Controllers\Service_show->get_change_container_log('26')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->service_detail('26')
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-12-09 08:29:37 --> Table 'container drop management system.cdms_change_container_log' doesn't exist
+CRITICAL - 2021-12-09 08:29:37 --> Call to a member function getRow() on bool
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(483): App\Models\M_cdms_change_container_log->get_next_ser_id('26')
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(183): App\Controllers\Service_show->get_change_container_log('26')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->service_detail('26')
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-12-09 08:29:48 --> Table 'container drop management system.cdms_change_container_log' doesn't exist
+CRITICAL - 2021-12-09 08:29:48 --> Call to a member function getRow() on bool
+#0 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(483): App\Models\M_cdms_change_container_log->get_next_ser_id('26')
+#1 C:\xampp\htdocs\code_team4\app\Controllers\Service_show.php(183): App\Controllers\Service_show->get_change_container_log('26')
+#2 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(928): App\Controllers\Service_show->service_detail('26')
+#3 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service_show))
+#4 C:\xampp\htdocs\code_team4\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\code_team4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
