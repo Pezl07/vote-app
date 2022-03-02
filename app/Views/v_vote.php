@@ -1,6 +1,5 @@
 <?php
     $user_score = 500;
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
     <style>
         * {
             font-family: 'Kanit', sans-serif !important;
@@ -72,7 +73,7 @@
 
             <div class="container">
                 <div class="d-flex justify-content-center mb-5">
-                    <input class="btn btn-secondary-outline me-3" type="reset" value="Clear" onclick="user.unlock_score_input()">
+                    <input class="btn btn-secondary-outline me-3" type="reset" value="Clear" onclick="user.unlock_score_input(); user.reset_user_score()">
                     <button class="btn btn-warning ps-5 pe-5 pt-3 pb-3 ms-3" type="button" id="vote_open_modal" data-bs-toggle="modal" data-bs-target="#exampleModal">Vote</button>
                 </div>
             </div>
@@ -84,6 +85,7 @@
                 <p>3. กดปุ่ม "Confirm Vote" เพื่อโหวต หรือกด "Cancel" เพื่อยกเลิก</p>
                 <p>4. สามารถโหวตได้หลายครั้ง ถ้ายังมีแต้มเหลืออยู่</p>
                 <p>5. หากกดปุ่ม "Confirm Vote" แล้ว ท่านไม่สามารถเปลี่ยนแปลงผลการโหวตได้</p>
+                <?= "session : " . $vote_status ?>
             </div>
         </form>
     </main>
@@ -106,12 +108,23 @@
         </div>
     </div>
 
-    <div style="position: relative;" id="alert">
-        <div class="alert alert-warning alert-dismissible fade show" role="alert" style="position: fixed; bottom: 20px; right: 20px;">
-            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+    <?php if ($vote_status == "success") : ?>
+        <div style="position: relative;" class="alert">
+            <div class="alert alert-success alert-dismissible fade show" role="alert" style="position: fixed; bottom: 20px; right: 20px; width: 600px">
+                <i class="bi bi-check-circle"></i>
+                <strong>Vote successful</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </div>
+    <?php elseif ($vote_status == "fail") : ?>
+    <div style="position: relative;" class="alert" >
+        <div class="alert alert-danger alert-dismissible fade show" role="alert" style="position: fixed; bottom: 20px; right: 20px; width: 600px">
+            <i class="bi bi-x-circle"></i>
+            <strong>Vote failed</strong>, please try again later
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
     </div>
+    <?php endif; ?>
 
     <script>
         setTimeout(function(){
@@ -121,7 +134,7 @@
         let alert = {
             time_out : 10000,
             hide_alert: function() {
-                $("#alert").hide(300);
+                $(".alert").hide(300);
             } 
         }
         let input_handling = {
@@ -138,6 +151,10 @@
             },
             get_remain_score: function() {
                 return this.remain_score;
+            },
+            reset_user_score: function() {
+                this.remain_score = this.user_score;
+                this.render_user_score();
             },
             cal_user_score: function() {
                 let total_score = 0;

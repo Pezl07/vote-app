@@ -26,8 +26,13 @@ class Report extends Cdms_controller {
         $this->output('v_test'); // amCharts 5 
     }
 
-    public function index() {
-        echo view("v_vote");
+    public function index($vote_status = NULL) {
+        if ($vote_status == NULL)
+            $vote_status = "test";
+ 
+        $data["vote_status"] = $vote_status;
+
+        echo view("v_vote", $data);
     }
 
     public function show_input() {
@@ -39,20 +44,20 @@ class Report extends Cdms_controller {
     
         // echo "Cluster : " . $obj['cluster'] . '<br>';
         // echo "Score : " . $obj['score'] . '<br>';
-        echo "<pre>";
-        print_r($obj_score_input);
-        echo "</pre>";
+        // echo "<pre>";
+        // print_r($obj_score_input);
+        // echo "</pre>";
 
-        // $number = mt_rand(0,1);    // $this->show_input();
-        $number  = 0;
-        if($number == 0)
+        $number = mt_rand(0,1);
+        if($number == 0) {
             $this->process1($obj_score_input);
-            // echo '1';
-        // }else{
-        //     $this->process2($obj_score_input);
-        //     echo '2';
-        // }
+        }
+        else {
+            $this->process2($obj_score_input);
+        }
 
+        $data["vote_status"] = "success";
+        return $this->response->redirect(base_url() . "/Report/index/success");
     }
 
     public function process1($obj_score_input) {
