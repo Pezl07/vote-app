@@ -53,10 +53,10 @@
                 <center><h1 class="mt-5">โหวตมกุลที่ท่านชื่นชอบ</h1></center>
                 <div class="row">
                     <?php for ($i = 0; $i < 9; $i++) { ?>
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
+                        <div class="col-12 col-sm-6 col-md-4 mt-4">
                             <div class="card">
                                 <div class="card-body">
-                                    <center><img src="https://dummyimage.com/200x200/000/fff" alt=""></center>
+                                    <center><img src="https://dummyimage.com/220x220/000/fff" alt="" style="max-width: 220px; max-height: 220px;"></center>
                                     <h4 class="card-title mt-3">มกุล <?= $i ?></h4>
                                     <h6 class="card-subtitle mb-3 text-muted"><?= "ระบบที่พัฒนา"?></h6>
                                     <div class="col-12">
