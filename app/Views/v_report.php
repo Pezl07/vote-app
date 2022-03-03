@@ -87,6 +87,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Volkhov:wght@700&amp;display=swap" rel="stylesheet">
 
 <script>
+	
 
 	var h_screen = $(window).height() - 200;
 	// console.log(h_screen);
@@ -211,16 +212,6 @@
         var colors = ['#058DC7', '#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4'];
     // });
 
-    data_bar_chart[0].data[0].color = '#058DC7';
-    data_bar_chart[0].data[1].color = '#50B432';
-    data_bar_chart[0].data[2].color = '#ED561B';
-    data_bar_chart[0].data[3].color = '#CD0000';
-    data_bar_chart[0].data[4].color = '#24CBE5';
-    data_bar_chart[0].data[5].color = '#FFA500';
-    data_bar_chart[0].data[6].color = '#8B658B';
-    data_bar_chart[0].data[7].color = '#FFF263';
-    data_bar_chart[0].data[8].color = '#6AF9C4';
-
 
 	function findIndicesOfMax(inp, count) {
 		var outp = new Array();
@@ -274,6 +265,22 @@
             series: data_bar_chart
         });
     }
+
+	$(document).ready(function(){
+		data_bar_chart[0].data[0].color = '#058DC7';
+		data_bar_chart[0].data[1].color = '#50B432';
+		data_bar_chart[0].data[2].color = '#ED561B';
+		data_bar_chart[0].data[3].color = '#CD0000';
+		data_bar_chart[0].data[4].color = '#24CBE5';
+		data_bar_chart[0].data[5].color = '#FFA500';
+		data_bar_chart[0].data[6].color = '#8B658B';
+		data_bar_chart[0].data[7].color = '#FFF263';
+		data_bar_chart[0].data[8].color = '#6AF9C4';
+
+		bar_chart.update( {
+            series: data_bar_chart
+        });
+	});
 
     </script>
 </section>

@@ -68,9 +68,11 @@
                     <?php for ($i = 0; $i < 9; $i++) { ?>
                         <div class="col-12 col-sm-6 col-md-4 mt-4">
                             <div class="card">
-                                <div class="card-body" style="position: relative">
-                                    <center><img src="https://dummyimage.com/220x220/000/fff" alt="" style="min-width: 150px; min-height: 150px; max-width: 20vw; max-height: 20vw;"></center>
-                                    <img src="https://dummyimage.com/60x60/000/fff" alt="" style="border-radius: 50%; position: absolute; top: 200px; left: 20%;">
+                                <div class="card-body">
+                                    <div class="container p-0" style="position: relative;">
+                                        <center><img src="https://dummyimage.com/220x220/000/fff" alt="" style="min-width: 150px; min-height: 150px; max-width: 20vw; max-height: 20vw;"></center>
+                                        <img src="https://dummyimage.com/60x60/000/fff" alt="" style="border-radius: 50%; position: absolute; bottom: -10px; left: 10%">
+                                    </div>
                                     <h4 class="card-title mt-3">มกุล <?= $i ?></h4>
                                     <h6 class="card-subtitle mb-3 text-muted"><?= "ระบบที่พัฒนา"?></h6>
 
