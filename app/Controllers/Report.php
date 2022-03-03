@@ -1,6 +1,7 @@
 <?php
 namespace App\Controllers;
 use Pusher\Pusher;
+use App\Models\M_vot_vote;
 use App\Models\M_vot_cluster;
 use App\Models\M_cdms_user;
 
@@ -12,9 +13,9 @@ class Report extends Cdms_controller {
     }
 
     public function show_report() {
-        $v_cst = new M_vot_cluster();
+        $m_cst = new M_vot_cluster();
         //get cluter information
-        $data['cluster'] = $v_cst->get_all();
+        $data['cluster'] = $m_cst->get_all();
         echo view('v_report', $data);
     }
 
@@ -33,22 +34,28 @@ class Report extends Cdms_controller {
     public function process() {
         $arr_score_input =  $this->request->getPost("score_input_cluster");
 
-        $number = mt_rand(0,1);
-        if($number == 0) {
-            $this->process1($arr_score_input);
-        }
-        else {
-            $this->process2($arr_score_input);
-        }
+        $m_vot = new M_vot_vote();
 
         $sum_score = array_sum($arr_score_input);
         
-        if ($this->check_score_enough($sum_score))
+        if ($this->check_score_enough($sum_score)){
             $_SESSION["vote_status"] = "success";
-        else
+            $number = mt_rand(0,1);
+            if($number == 0) {
+                $this->process1($arr_score_input);
+            }
+            else {
+                $this->process2($arr_score_input);
+            }
+            $m_vot->insert_vote($arr_score_input, $_SESSION["usr_id"]);
+        }
+        else{
             $_SESSION["vote_status"] = "fail";
+        }
+
         return $this->response->redirect(base_url() . "/Report/index");
     }
+
     public function check_score_enough($score) {
         $m_usr = new M_cdms_user();
         $obj_user = $m_usr->get_usr_remain_score_by_usr_id($_SESSION["usr_id"]);
