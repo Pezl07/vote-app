@@ -20,7 +20,7 @@ class Login extends Cdms_controller {
 
         
         $m_user = new M_cdms_user();
-        $user = $m_user->check_login($username);
+        $user = $m_user->get_by_username($username);
         print_r($user);
         //check password
         if($password == $user->usr_password ){
