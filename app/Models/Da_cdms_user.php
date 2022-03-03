@@ -12,11 +12,10 @@ use CodeIgniter\Model;
 */
 class Da_cdms_user extends Model
 {
-    protected $table = 'cdms_user';
-    protected $primaryKey = 'user_id';
+    protected $table = 'vot_user';
+    protected $primaryKey = 'usr_id ';
     protected $allowedFields = [
-        'user_username', 'user_password', 'user_nickname', 'user_prefix ', 'user_name_th', 'user_name_en', 'user_position', 'user_group_id',
-        'user_active', 'user_status', 'create_by', 'update_by', 'created_at', 'updated_at', 'created', 'updated_at', 'deleted_at'
+        'usr_name', 'usr_password', 'usr_full_name', 'usr_cluster_id ', 'usr_role', 'usr_remain_score', 'usr_image'
     ];
 
 }

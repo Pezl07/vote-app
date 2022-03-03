@@ -17,10 +17,10 @@ class M_cdms_user extends Da_cdms_user {
     * @author   Kittipod
     * @Create Date  2564-12-07
     */
-    public function get_by_username($username) {
+    public function check_login($username) {
 
-        $sql = "SELECT * FROM `cdms_user` 
-                WHERE `user_username` = '$username'" ;
+        $sql = "SELECT * FROM `vot_user` 
+                WHERE `usr_name` = '$username' " ;
         
         return $this->db->query($sql)->getRow();
     }

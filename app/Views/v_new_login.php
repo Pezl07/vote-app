@@ -98,7 +98,7 @@ body {
                 <div class="row d-flex justify-content-center align-items-center h-100">
                     <div class='sub_container'>
                         <div class="logo text-center">
-                            <img src="https://se.buu.ac.th/gami_ossd/assets/dist/img/cluster/cluster4.png" width="300" height="300">
+                            <img src="../../Assets/img/picture_camp.png" width="300" height="300">
                         </div>
                         <h2 class=" text-center">OSSD CAMP #10</h2>
                         <h4 class=" text-center">Login</h4>
@@ -130,7 +130,7 @@ body {
                             <?php } ?>
                             <!-- <div class="text-center pt-3" style="color:red">Invalid username or password</div> -->
                             <div class="text-center pt-2 align-items-center">
-                                <button type="button" class="btn btn-primary btn-lg"
+                                <button type="submit" class="btn btn-primary btn-lg"
                                     style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
                             </div>
 
