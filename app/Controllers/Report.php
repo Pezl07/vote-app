@@ -1,6 +1,7 @@
 <?php
 namespace App\Controllers;
 use Pusher\Pusher;
+use App\Models\M_vot_cluster;
 use App\Models\M_cdms_user;
 
 class Report extends Cdms_controller {
@@ -11,7 +12,10 @@ class Report extends Cdms_controller {
     }
 
     public function show_report() {
-        echo view('v_report');
+        $v_cst = new M_vot_cluster();
+        //get cluter information
+        $data['cluster'] = $v_cst->get_all();
+        echo view('v_report', $data);
     }
 
     public function index() {
@@ -24,10 +28,6 @@ class Report extends Cdms_controller {
         $data["obj_user"] = $obj_user;
 
         echo view("v_vote", $data);
-    }
-
-    public function show_input() {
-        echo view('v_input');
     }
 
     public function process() {

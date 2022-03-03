@@ -50,10 +50,6 @@
         }
     </style>
 
-    <!-- Bootstrap 3.3.7 -->
-    <script type="text/javascript" src="https://se.buu.ac.th/gami_ossd/assets/bower_components/bootstrap/dist/js/bootstrap.min.js "></script>
-    <!-- Google Font -->
-    <link rel="stylesheet" href="https://se.buu.ac.th/gami_ossd/assets/dist/css/google-font.css">
 </head>
 
 <body class="skin-blue sidebar-mini /*sidebar-collapse*/" style="height: auto; min-height: 100%;">
@@ -79,7 +75,8 @@
         </div>
     </main>
 <!-- highcharts -->
-<script src="https://se.buu.ac.th/gami_ossd/assets/dist/js/highcharts.js"></script>
+<!-- <script src="https://se.buu.ac.th/gami_ossd/assets/dist/js/highcharts.js"></script> -->
+<script src="https://code.highcharts.com/highcharts.js"></script>
 <!-- Pusher -->
 <script src="https://js.pusher.com/7.0/pusher.min.js"></script>
 
@@ -93,9 +90,9 @@
 
 	var h_screen = $(window).height() - 200;
 	// console.log(h_screen);
-	var gold_url = "https://se.buu.ac.th/gami_ossd/assets/dist/img/gold_crown.png"
-	var sliver_url = "https://se.buu.ac.th/gami_ossd/assets/dist/img/sliver_crown.png"
-	var bronze_url = "https://se.buu.ac.th/gami_ossd/assets/dist/img/broezn_crown.png"
+	var gold_url = "<?= base_url() . "/assets/img/gold_crown.png"?>"
+	var sliver_url = "<?= base_url() . "/assets/img/sliver_crown.png"?>"
+	var bronze_url = "<?= base_url() . "/assets/img/broezn_crown.png"?>"
 	var default_formatter = {
 			enabled: true,
 			useHTML: true,
@@ -142,15 +139,21 @@
 		showInLegend: false, 
 		dataLabels: default_formatter,
 		data: [{
-			y: 0,          
+			y: <?php echo $cluster[0]->cst_total_score ?>,          
 			dataLabels:  gold_formatter,
 		},{
-			y: 0,         
+			y: <?php echo $cluster[1]->cst_total_score ?>,         
 			dataLabels:  sliver_formatter
 		},{
-			y: 0,         
+			y: <?php echo $cluster[2]->cst_total_score ?>,         
 			dataLabels:  bronze_formatter
-		}, { y: 0 }, { y: 0 }, { y: 0 }, { y: 0 }, { y: 0 }, { y: 0 }]
+		}, 
+		{ y : <?php echo $cluster[3]->cst_total_score ?> }, 
+		{ y : <?php echo $cluster[4]->cst_total_score ?> }, 
+		{ y : <?php echo $cluster[5]->cst_total_score ?> }, 
+		{ y : <?php echo $cluster[6]->cst_total_score ?> }, 
+		{ y : <?php echo $cluster[7]->cst_total_score ?> }, 
+		{ y : <?php echo $cluster[8]->cst_total_score ?> }]
 		}
 	];
 
@@ -254,7 +257,6 @@
 			
 
     function rated(res){
-
         for(var i = 0; i < res.length; i++){
             data_bar_chart[0].data[i].y += Number(res[i]);
             data_bar_chart[0].data[i].dataLabels = '';
