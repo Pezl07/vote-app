@@ -91,6 +91,8 @@
 
 <script>
 
+	var h_screen = $(window).height() - 200;
+	// console.log(h_screen);
 	var gold_url = "https://se.buu.ac.th/gami_ossd/assets/dist/img/gold_crown.png"
 	var sliver_url = "https://se.buu.ac.th/gami_ossd/assets/dist/img/sliver_crown.png"
 	var bronze_url = "https://se.buu.ac.th/gami_ossd/assets/dist/img/broezn_crown.png"
@@ -155,7 +157,7 @@
 	// Set bar char
 	var bar_chart = Highcharts.chart('chart', {
 		chart: {
-            height: 500,
+            height: h_screen,
 			type: 'column'
 		},
 		title: {
