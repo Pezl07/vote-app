@@ -82,7 +82,7 @@ body {
 }
 
 #hide {
-        display: none;
+    display: none;
 }
 
 .password-input {

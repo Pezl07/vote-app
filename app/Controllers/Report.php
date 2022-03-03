@@ -3,7 +3,7 @@ namespace App\Controllers;
 use Pusher\Pusher;
 use App\Models\M_vot_vote;
 use App\Models\M_vot_cluster;
-use App\Models\M_cdms_user;
+use App\Models\M_vot_user;
 
 class Report extends Cdms_controller {
 
@@ -24,7 +24,7 @@ class Report extends Cdms_controller {
             $_SESSION["vote_status"] = "";
 
         // get user information
-        $m_usr = new M_cdms_user();
+        $m_usr = new M_vot_user();
         $obj_user = $m_usr->get_by_usr_id($_SESSION["usr_id"]);
         $data["obj_user"] = $obj_user;
 
@@ -40,6 +40,7 @@ class Report extends Cdms_controller {
         
         if ($this->check_score_enough($sum_score)){
             $_SESSION["vote_status"] = "success";
+
             $number = mt_rand(0,1);
             if($number == 0) {
                 $this->process1($arr_score_input);
@@ -47,6 +48,12 @@ class Report extends Cdms_controller {
             else {
                 $this->process2($arr_score_input);
             }
+
+            $this->minus_remain_score($sum_score);
+            for ($i = 0 ; $i < count($arr_score_input); $i++) {
+                $this->add_total_score($arr_score_input[$i], $i + 1);
+            }
+            
             $m_vot->insert_vote($arr_score_input, $_SESSION["usr_id"]);
         }
         else{
@@ -55,12 +62,24 @@ class Report extends Cdms_controller {
 
         return $this->response->redirect(base_url() . "/Report/index");
     }
+    
+    public function add_total_score($score = NULL, $cst_id) {
+        if ($score != NULL) {
+            $m_cst = new M_vot_cluster();
+            $m_cst->add_total_score($score, $cst_id);
+        }
+    }
 
     public function check_score_enough($score) {
-        $m_usr = new M_cdms_user();
+        $m_usr = new M_vot_user();
         $obj_user = $m_usr->get_usr_remain_score_by_usr_id($_SESSION["usr_id"]);
         $user_score = $obj_user->usr_remain_score;
-        return ($score < $user_score);
+        return ($score <= $user_score);
+    }
+
+    public function minus_remain_score($score) {
+        $m_usr = new M_vot_user();
+        $m_usr->minus_usr_remain_score($score, $_SESSION["usr_id"]);
     }
 
     public function process1($obj_score_input) {

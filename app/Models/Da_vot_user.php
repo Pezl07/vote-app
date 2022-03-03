@@ -4,7 +4,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Da_cdms_user extends Model
+class Da_vot_user extends Model
 {
     protected $table = 'vot_user';
     protected $primaryKey = 'usr_id ';
