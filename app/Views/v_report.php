@@ -139,24 +139,18 @@
 		name: "คะแนน ",
 		showInLegend: false, 
 		dataLabels: default_formatter,
-		data: [{
-			y: <?php echo $cluster[0]->cst_total_score ?>,          
-			dataLabels:  gold_formatter,
-		},{
-			y: <?php echo $cluster[1]->cst_total_score ?>,         
-			dataLabels:  sliver_formatter
-		},{
-			y: <?php echo $cluster[2]->cst_total_score ?>,         
-			dataLabels:  bronze_formatter
-		}, 
-		{ y : <?php echo $cluster[3]->cst_total_score ?> }, 
-		{ y : <?php echo $cluster[4]->cst_total_score ?> }, 
-		{ y : <?php echo $cluster[5]->cst_total_score ?> }, 
-		{ y : <?php echo $cluster[6]->cst_total_score ?> }, 
-		{ y : <?php echo $cluster[7]->cst_total_score ?> }, 
-		{ y : <?php echo $cluster[8]->cst_total_score ?> }]
-		}
-	];
+		data: [
+			{ y : <?php echo $cluster[0]->cst_total_score ?> },
+			{ y : <?php echo $cluster[1]->cst_total_score ?> },
+			{ y : <?php echo $cluster[2]->cst_total_score ?> }, 
+			{ y : <?php echo $cluster[3]->cst_total_score ?> }, 
+			{ y : <?php echo $cluster[4]->cst_total_score ?> }, 
+			{ y : <?php echo $cluster[5]->cst_total_score ?> }, 
+			{ y : <?php echo $cluster[6]->cst_total_score ?> }, 
+			{ y : <?php echo $cluster[7]->cst_total_score ?> }, 
+			{ y : <?php echo $cluster[8]->cst_total_score ?> }
+		]
+	}];
 
 	// Set bar char
 	var bar_chart = Highcharts.chart('chart', {
@@ -243,15 +237,15 @@
 
     var channel = pusher2.subscribe('pusher_score');
     channel.bind('up_score', function(data) {
-        rated(data);
+		for(var i = 0; i < data.length; i++){
+            data_bar_chart[0].data[i].y += Number(data[i]);
+            data_bar_chart[0].data[i].dataLabels = '';
+        }
+        rated();
     });
 			
 
-    function rated(res){
-        for(var i = 0; i < res.length; i++){
-            data_bar_chart[0].data[i].y += Number(res[i]);
-            data_bar_chart[0].data[i].dataLabels = '';
-        }
+    function rated(){
 
         var indices = findIndicesOfMax(data_bar_chart[0].data, 3);
 
@@ -276,6 +270,8 @@
 		data_bar_chart[0].data[6].color = '#8B658B';
 		data_bar_chart[0].data[7].color = '#FFF263';
 		data_bar_chart[0].data[8].color = '#6AF9C4';
+
+		rated();
 
 		bar_chart.update( {
             series: data_bar_chart

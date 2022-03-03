@@ -21,7 +21,9 @@ $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('Dashboard');
 $routes->setDefaultMethod('dashboard_show');
 $routes->setTranslateURIDashes(false);
-$routes->set404Override();
+$routes->set404Override(function(){
+	echo view('v_404page');
+});
 $routes->setAutoRoute(true);
 
 /*
