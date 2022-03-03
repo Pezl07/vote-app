@@ -1,6 +1,3 @@
-<?php
-    $user_score = 500;
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet" />
 
     <style>
         * {
@@ -42,7 +42,7 @@
                 </button>
                 <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
-                        <span class="mt-1 me-5" style="font-size: 1.5rem">แต้มคงเหลือ <span id="remain_score"><?= $user_score?></span></span>
+                        <span class="mt-1 me-5" style="font-size: 1.5rem">แต้มคงเหลือ <span id="remain_score"><?= $obj_user->usr_remain_score ?></span></span>
                         <img src="https://dummyimage.com/40x40/000/fff" id="profile_image" alt="">
                     </ul>
                 </div>
@@ -57,11 +57,11 @@
                         <div class="col-12 col-sm-6 col-md-4 mt-4">
                             <div class="card">
                                 <div class="card-body">
-                                    <center><img src="https://dummyimage.com/220x220/000/fff" alt="" style="max-width: 220px; max-height: 220px;"></center>
+                                    <center><img src="https://dummyimage.com/220x220/000/fff" alt="" style="min-width: 150px; min-height: 150px; max-width: 20vw; max-height: 20vw;"></center>
                                     <h4 class="card-title mt-3">มกุล <?= $i ?></h4>
                                     <h6 class="card-subtitle mb-3 text-muted"><?= "ระบบที่พัฒนา"?></h6>
                                     <div class="col-12">
-                                        <input class="form-control score-input score-input-<?= $i ?>" type="number" min="1" step="1" placeholder="กรอกคะแนน" name="score_input_cluster[]" 
+                                        <input class="form-control form-control score-input score-input-<?= $i ?>" type="number" min="1" step="1" placeholder="กรอกคะแนน" name="score_input_cluster[]" 
                                         oninput="input_handling.convert_to_positive(this); user.cal_user_score();">
                                     </div>
                                 </div>
@@ -72,7 +72,7 @@
             </div>
 
             <div class="container">
-                <div class="d-flex justify-content-center mb-5">
+                <div class="d-flex justify-content-center my-5">
                     <input class="btn btn-secondary-outline me-3" type="reset" value="Clear" onclick="user.unlock_score_input(); user.reset_user_score()">
                     <button class="btn btn-warning ps-5 pe-5 pt-3 pb-3 ms-3" type="button" id="vote_open_modal" data-bs-toggle="modal" data-bs-target="#exampleModal">Vote</button>
                 </div>
@@ -80,6 +80,7 @@
 
             <div class="container mb-5">
                 <h4 class="mb-2"><b>หมายเหตุ :</b></h4>
+                <p><?= $_SESSION["vote_status"] ?></p>
                 <p>1. กรอกคะแนนที่ท่านต้องการให้แต่ละมกุล (ไม่จำเป็นต้องครบทุกมกุล)</p>
                 <p>2. เมื่อต้องการโหวต กดปุ่ม "Vote"</p>
                 <p>3. กดปุ่ม "Confirm Vote" เพื่อโหวต หรือกด "Cancel" เพื่อยกเลิก</p>
@@ -107,7 +108,7 @@
         </div>
     </div>
 
-    <?php if ($vote_status == "success") : ?>
+    <?php if ($_SESSION["vote_status"] == "success") : ?>
         <div style="position: relative;" class="alert">
             <div class="alert alert-success alert-dismissible fade show" role="alert" style="position: fixed; bottom: 20px; right: 20px; width: 600px">
                 <i class="bi bi-check-circle"></i>
@@ -115,7 +116,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         </div>
-    <?php elseif ($vote_status == "fail") : ?>
+    <?php elseif ($_SESSION["vote_status"] == "fail") : ?>
     <div style="position: relative;" class="alert" >
         <div class="alert alert-danger alert-dismissible fade show" role="alert" style="position: fixed; bottom: 20px; right: 20px; width: 600px">
             <i class="bi bi-x-circle"></i>
@@ -124,6 +125,9 @@
         </div>
     </div>
     <?php endif; ?>
+    <?php
+        unset($_SESSION["vote_status"]);
+    ?>
 
     <script>
         setTimeout(function(){
@@ -143,8 +147,8 @@
         };
         let user = {
             user_id: 1,
-            user_score: <?= $user_score?>,
-            remain_score: <?= $user_score?>,
+            user_score: <?= $obj_user->usr_remain_score ?>,
+            remain_score: <?= $obj_user->usr_remain_score?>,
             minus_user_score: function(score) {
                 this.remain_score = this.user_score - score;
             },

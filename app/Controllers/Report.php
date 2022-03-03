@@ -1,18 +1,27 @@
 <?php
 namespace App\Controllers;
 use Pusher\Pusher;
+use App\Models\M_cdms_user;
 
 class Report extends Cdms_controller {
+
+    function __construct() {
+        session_start();
+        $_SESSION["usr_id"] = 1;
+    }
 
     public function show_report() {
         echo view('v_report');
     }
 
-    public function index($vote_status = NULL) {
-        if ($vote_status == NULL)
-            $vote_status = "test";
+    public function index() {
+        if (!isset($_SESSION["vote_status"]))
+            $_SESSION["vote_status"] = "";
 
-        $data["vote_status"] = $vote_status;
+        // get user information
+        $m_usr = new M_cdms_user();
+        $obj_user = $m_usr->get_by_usr_id($_SESSION["usr_id"]);
+        $data["obj_user"] = $obj_user;
 
         echo view("v_vote", $data);
     }
@@ -33,13 +42,18 @@ class Report extends Cdms_controller {
         }
 
         $sum_score = array_sum($arr_score_input);
+        
         if ($this->check_score_enough($sum_score))
-            return $this->response->redirect(base_url() . "/Report/index/success");
-        return $this->response->redirect(base_url() . "/Report/index/success");
+            $_SESSION["vote_status"] = "success";
+        else
+            $_SESSION["vote_status"] = "fail";
+        return $this->response->redirect(base_url() . "/Report/index");
     }
     public function check_score_enough($score) {
-        $user_score = 500;
-        return ($user_score < $score);
+        $m_usr = new M_cdms_user();
+        $obj_user = $m_usr->get_usr_remain_score_by_usr_id($_SESSION["usr_id"]);
+        $user_score = $obj_user->usr_remain_score;
+        return ($score < $user_score);
     }
 
     public function process1($obj_score_input) {

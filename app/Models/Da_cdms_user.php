@@ -4,12 +4,6 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-/*
-* Da_cdms_user
-* insert update delete user
-* @author   Kittipod
-* @Create Date  2564-12-07
-*/
 class Da_cdms_user extends Model
 {
     protected $table = 'cdms_user';
