@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-use App\Models\M_cdms_user;
+use App\Models\M_vot_user;
 
 class Login extends Cdms_controller {
 
@@ -19,7 +19,7 @@ class Login extends Cdms_controller {
         $data['username'] = $username;
 
         
-        $m_user = new M_cdms_user();
+        $m_user = new M_vot_user();
         $user = $m_user->get_by_username($username);
         print_r($user);
         //check password
