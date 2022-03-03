@@ -4,9 +4,8 @@ use App\Models\Da_cdms_user;
 
 class M_cdms_user extends Da_cdms_user {
     public function get_by_username($username) {
-
-        $sql = "SELECT * FROM `cdms_user` 
-                WHERE `user_username` = '$username'" ;
+        $sql = "SELECT * FROM `vot_user` 
+                WHERE `usr_name` = '$username' " ;
         
         return $this->db->query($sql)->getRow();
     }

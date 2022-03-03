@@ -18,11 +18,12 @@ class Login extends Cdms_controller {
         $password = $this->request->getPost('password');
         $data['username'] = $username;
 
+        
         $m_user = new M_cdms_user();
-        $user = $m_user->get_by_username($username);
-
+        $user = $m_user->check_login($username);
+        print_r($user);
         //check password
-        if(password_verify($password, $user->user_password) && !empty($user) && !preg_match('/[^a-z0-9 _]+/i', $username)){
+        if($password == $user->usr_password ){
             $_SESSION['invalid_password'] = false;
             $_SESSION['logged_in'] = true;
             $_SESSION['user_name'] =  $user;
