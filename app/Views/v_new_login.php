@@ -98,7 +98,7 @@ body {
                 <div class="row d-flex justify-content-center align-items-center h-100">
                     <div class='sub_container'>
                         <div class="logo text-center">
-                            <img src="../../Assets/img/picture_camp.png" width="300" height="300">
+                            <img src="../../Assets/img/logo.png" width="300" height="300">
                         </div>
                         <h2 class=" text-center">OSSD CAMP #10</h2>
                         <h4 class=" text-center">Login</h4>
