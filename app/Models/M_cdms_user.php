@@ -17,4 +17,9 @@ class M_cdms_user extends Da_cdms_user {
         $sql = "SELECT * FROM vot_user WHERE usr_id = '$usr_id'";
         return $this->db->query($sql)->getRow();
     }
+    public function minus_usr_remain_score($score, $usr_id) {
+        $sql = "UPDATE `vot_user` SET usr_remain_score = usr_remain_score - $score
+                WHERE usr_id = '$usr_id'";
+        return $this->db->query($sql); 
+    }
 }

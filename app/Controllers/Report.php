@@ -43,8 +43,10 @@ class Report extends Cdms_controller {
 
         $sum_score = array_sum($arr_score_input);
         
-        if ($this->check_score_enough($sum_score))
+        if ($this->check_score_enough($sum_score)) {
             $_SESSION["vote_status"] = "success";
+            $this->minus_remain_score($sum_score);
+        }
         else
             $_SESSION["vote_status"] = "fail";
         return $this->response->redirect(base_url() . "/Report/index");
@@ -53,7 +55,12 @@ class Report extends Cdms_controller {
         $m_usr = new M_cdms_user();
         $obj_user = $m_usr->get_usr_remain_score_by_usr_id($_SESSION["usr_id"]);
         $user_score = $obj_user->usr_remain_score;
-        return ($score < $user_score);
+        return ($score <= $user_score);
+    }
+
+    public function minus_remain_score($score) {
+        $m_usr = new M_cdms_user();
+        $m_usr->minus_usr_remain_score($score, $_SESSION["usr_id"]);
     }
 
     public function process1($obj_score_input) {

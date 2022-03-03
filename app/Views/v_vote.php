@@ -29,6 +29,10 @@
             background-color: white !important;
             box-shadow: 1px 1px 5px 3px rgba(100,100,100,0.2);
         }
+        input.form-control {
+            height: 4rem;
+            font-size: 1.5rem;
+        }
     </style>
 </head>
 <body>
@@ -40,7 +44,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"> </span>
                 </button>
-                <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse mt-4 mt-lg-0" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
                         <span class="mt-1 me-5" style="font-size: 1.5rem">แต้มคงเหลือ <span id="remain_score"><?= $obj_user->usr_remain_score ?></span></span>
                         <img src="https://dummyimage.com/40x40/000/fff" id="profile_image" alt="">
@@ -51,19 +55,31 @@
         
         <form id="vote_form" action="<?= base_url() . "/Report/process"?>" method="POST">
             <div class="container">
-                <center><h1 class="mt-5">โหวตมกุลที่ท่านชื่นชอบ</h1></center>
+                <center><h1 class="mt-5">
+                <?php
+                    if ($obj_user->usr_remain_score > 0)
+                        echo "โหวตมกุลที่ท่านชื่นชอบ";
+                    else
+                        echo "ท่านหมดสิทธิ์โหวตแล้ว<br> (หากเกิดข้อผิดพลาด กรุณาแจ้งแอดมิน)";
+                ?>    
+                </h1></center>
+                
                 <div class="row">
                     <?php for ($i = 0; $i < 9; $i++) { ?>
                         <div class="col-12 col-sm-6 col-md-4 mt-4">
                             <div class="card">
-                                <div class="card-body">
+                                <div class="card-body" style="position: relative">
                                     <center><img src="https://dummyimage.com/220x220/000/fff" alt="" style="min-width: 150px; min-height: 150px; max-width: 20vw; max-height: 20vw;"></center>
+                                    <img src="https://dummyimage.com/60x60/000/fff" alt="" style="border-radius: 50%; position: absolute; top: 200px; left: 20%;">
                                     <h4 class="card-title mt-3">มกุล <?= $i ?></h4>
                                     <h6 class="card-subtitle mb-3 text-muted"><?= "ระบบที่พัฒนา"?></h6>
-                                    <div class="col-12">
-                                        <input class="form-control form-control score-input score-input-<?= $i ?>" type="number" min="1" step="1" placeholder="กรอกคะแนน" name="score_input_cluster[]" 
-                                        oninput="input_handling.convert_to_positive(this); user.cal_user_score();">
-                                    </div>
+
+                                    <?php if ($obj_user->usr_remain_score > 0) :?>
+                                        <div class="col-12">
+                                            <input class="mt-4 form-control score-input score-input-<?= $i ?>" type="number" min="1" step="1" placeholder="กรอกคะแนน" name="score_input_cluster[]"
+                                            oninput="input_handling.convert_to_positive(this); user.cal_user_score(this);">
+                                        </div>
+                                    <?php endif; ?>
                                 </div>
                             </div>
                         </div>
@@ -71,14 +87,16 @@
                 </div>
             </div>
 
-            <div class="container">
-                <div class="d-flex justify-content-center my-5">
-                    <input class="btn btn-secondary-outline me-3" type="reset" value="Clear" onclick="user.unlock_score_input(); user.reset_user_score()">
-                    <button class="btn btn-warning ps-5 pe-5 pt-3 pb-3 ms-3" type="button" id="vote_open_modal" data-bs-toggle="modal" data-bs-target="#exampleModal">Vote</button>
+            <?php if ($obj_user->usr_remain_score > 0) : ?>
+                <div class="container">
+                    <div class="d-flex justify-content-center my-5">
+                        <input class="btn btn-secondary-outline me-3" type="reset" value="Clear" onclick="user.unlock_score_input(); user.reset_user_score()">
+                        <button class="btn btn-warning ps-5 pe-5 pt-3 pb-3 ms-3" type="button" id="vote_open_modal" data-bs-toggle="modal" data-bs-target="#exampleModal">Vote</button>
+                    </div>
                 </div>
-            </div>
+            <?php endif; ?>
 
-            <div class="container mb-5">
+            <div class="container my-5">
                 <h4 class="mb-2"><b>หมายเหตุ :</b></h4>
                 <p><?= $_SESSION["vote_status"] ?></p>
                 <p>1. กรอกคะแนนที่ท่านต้องการให้แต่ละมกุล (ไม่จำเป็นต้องครบทุกมกุล)</p>
@@ -159,13 +177,18 @@
                 this.remain_score = this.user_score;
                 this.render_user_score();
             },
-            cal_user_score: function() {
+            cal_user_score: function(elem) {
                 let total_score = 0;
                 const SCORE_INPUT_ELEM = document.getElementsByClassName("score-input");
                 for (let i = 0; i < SCORE_INPUT_ELEM.length; i++) {
                     let input_score = SCORE_INPUT_ELEM[i].value;
                     if (input_score == '') input_score = 0;
                     total_score += Number(input_score);
+                }
+
+                if (total_score > this.user_score) {
+                    elem.value = elem.value - (total_score - this.user_score);
+                    total_score = this.user_score;
                 }
                 
                 this.minus_user_score(total_score);
@@ -206,11 +229,9 @@
                 }
             },
             lock_vote_button: function() {
-                console.log("Lock vote button");
                 $("#vote_open_modal").attr("disabled", true);
             },
             unlock_vote_button: function() {
-                console.log("Unlock vote button");
                 $("#vote_open_modal").attr("disabled", false);
             },
         };
