@@ -15,7 +15,7 @@ use Psr\Log\LoggerInterface;
 * @author	Wirat
 * @Create Date	2564-07-29
 */
-class Cdms_controller extends Controller
+class Vot_controller extends Controller
 {
 	/**
 	 * Instance of the main Request object.

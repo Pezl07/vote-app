@@ -11,7 +11,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet" />
-    <title>Document</title>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>ระบบโหวต</title>
 </head>
 <style>
 
@@ -104,16 +106,17 @@ body {
                         <h4 class=" text-center">Login</h4>
                         <form id="login_form" action="<?php echo base_url() . '/Login/login' ?>" method="POST">
 
-                            <!-- Email input -->
+                            <!-- Username input -->
                             <div class="form-outline mb-4">
-                                <input class="form-control form-control-lg"
-                                placeholder="Enter username" type="text" name="username" id="username" value="<?php echo $_SESSION['fail']; ?>" />
+                                <input class="form-control form-control-lg" required
+                                placeholder="Enter username" type="text" name="username" id="username"
+                                value="<?php if (isset($_SESSION["usr_name"])) echo $_SESSION["usr_name"]?>" />
                                 <label class="form-label" for="username">Username</label>
                             </div>
 
                             <!-- Password input -->
                             <div class="form-outline mb-3 password-input">
-                                <input class="form-control form-control-lg"
+                                <input class="form-control form-control-lg" required
                                 placeholder="Enter password" type="password" name="password" id="password" />
                                 <label class="form-label" for="password">Password</label>
                                 <div class="fa_eye">
@@ -121,14 +124,18 @@ body {
                                     <i class="far fa-eye" id="hide" onclick="show_eye()"></i>
                                 </div>
                             </div>
+                            
+                            <?php if (isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] == false) : ?>
+                                <div class="alert alert-danger d-flex align-items-center" role="alert">
+                                    <i class="bi bi-x-circle me-2" style="font-size: 1.5rem "></i>
+                                    <div>Username หรือ Password ไม่ถูกต้อง</div>
+                                </div>
+                            <?php endif; ?>
 
                             <div class="d-flex justify-content-between align-items-center">
-                                <a href="#!" class="text-body">Forgot password?</a>
+                                <a href="#" class="text-body">Forgot password?</a>
                             </div>
-                            <?php if($_SESSION['invalid_password'] == true){ ?>
-                            <p id="invalid"> <?php echo '<div class="text-center" style="color:red">Invalid username or password</div>' ?> </p>
-                            <?php } ?>
-                            <!-- <div class="text-center pt-3" style="color:red">Invalid username or password</div> -->
+
                             <div class="text-center pt-2 align-items-center">
                                 <button type="submit" class="btn btn-primary btn-lg"
                                     style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
@@ -138,7 +145,6 @@ body {
                     </div>
                 </div>
             </div>
-
         </section>
     </div>
 

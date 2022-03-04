@@ -3,10 +3,9 @@ namespace App\Models;
 use App\Models\Da_vot_user;
 
 class M_vot_user extends Da_vot_user {
-    public function get_by_username($username) {
+    public function get_by_usr_name($usr_name) {
         $sql = "SELECT * FROM `vot_user` 
-                WHERE `usr_name` = '$username' " ;
-        
+                WHERE `usr_name` = '$usr_name'" ;
         return $this->db->query($sql)->getRow();
     }
     public function get_usr_remain_score_by_usr_id($usr_id) {

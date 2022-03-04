@@ -5,32 +5,32 @@ use App\Models\M_vot_vote;
 use App\Models\M_vot_cluster;
 use App\Models\M_vot_user;
 
-class Report extends Cdms_controller {
+class Report extends Vot_controller {
 
     function __construct() {
         session_start();
-        $_SESSION["usr_id"] = 1;
-    }
-
-    public function show_report() {
-        $m_cst = new M_vot_cluster();
-        //get cluter information
-        $data['cluster'] = $m_cst->get_all();
-        echo view('v_report', $data);
     }
 
     public function index() {
-        if (!isset($_SESSION["vote_status"]))
-            $_SESSION["vote_status"] = "";
+        if (!isset($_SESSION["usr_id"]))
+            return $this->response->redirect(base_url('/Login/index'));
 
+        if (!isset($_SESSION["vote_status"]))
+        $_SESSION["vote_status"] = "";
+        
         // get user information
         $m_usr = new M_vot_user();
         $obj_user = $m_usr->get_by_usr_id($_SESSION["usr_id"]);
         $data["obj_user"] = $obj_user;
-
         echo view("v_vote", $data);
     }
 
+    public function show_report() {
+        $m_cst = new M_vot_cluster();
+        $data['cluster'] = $m_cst->get_all();
+        echo view('v_report', $data);
+    }
+    
     public function process() {
         $arr_score_input =  $this->request->getPost("score_input_cluster");
 

@@ -25,7 +25,7 @@
         .modal-content {
             border-radius: 0px !important;
         }
-        .navbar {
+        nav.fluid-container {
             background-color: white !important;
             box-shadow: 1px 1px 5px 3px rgba(100,100,100,0.2);
         }
@@ -37,31 +37,31 @@
 </head>
 <body>
     <main class="main" id="top">
-        <nav class="navbar navbar-expand-lg navbar-light sticky-top" data-navbar-on-scroll="data-navbar-on-scroll">
-            <div class="container">
-                <img class="me-3" src="https://dummyimage.com/40x40/000/fff" alt="">
-                <a class="navbar-brand" href="<?= base_url() . "/Vote"?>">ระบบโหวต</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"> </span>
-                </button>
-                <div class="collapse navbar-collapse mt-4 mt-lg-0" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
-                        <span class="mt-1 me-5" style="font-size: 1.5rem">แต้มคงเหลือ <span id="remain_score"><?= $obj_user->usr_remain_score ?></span></span>
-                        <img src="https://dummyimage.com/40x40/000/fff" id="profile_image" alt="">
-                    </ul>
+        <nav class="fluid-container sticky-top p-2">
+            <div class="d-flex justify-content-between">
+                <div>
+                    <img class="me-3" src="https://dummyimage.com/40x40/000/fff">
+                    <a href="<?= base_url() . "/Report/index" ?>">ระบบโหวต</a>
+                </div>
+
+                <div>
+                    <span class="mt-1 me-2">แต้มคงเหลือ <span id="remain_score"><?= $obj_user->usr_remain_score ?></span></span>
+                    <img src="https://dummyimage.com/40x40/000/fff" id="profile_image">
+                    <span class="ms-2"><?= $_SESSION["usr_full_name"]?></span>
+                    <a class="btn ms-2" href="<?= base_url() . "/Login/logout" ?>">Log out</a>
                 </div>
             </div>
         </nav>
         
         <form id="vote_form" action="<?= base_url() . "/Report/process"?>" method="POST">
-            <div class="container">
-                <center><h1 class="mt-5">
+        <div class="container">
+            <center><h1 class="mt-5">
                 <?php
                     if ($obj_user->usr_remain_score > 0)
-                        echo "โหวตมกุลที่ท่านชื่นชอบ";
+                    echo "โหวตมกุลที่ท่านชื่นชอบ";
                     else
-                        echo "ท่านหมดสิทธิ์โหวตแล้ว<br> (หากเกิดข้อผิดพลาด กรุณาแจ้งแอดมิน)";
-                ?>    
+                    echo "ท่านหมดสิทธิ์โหวตแล้ว<br> (หากเกิดข้อผิดพลาด กรุณาแจ้งแอดมิน)";
+                    ?>    
                 </h1></center>
                 
                 <div class="row">
@@ -69,16 +69,23 @@
                         <div class="col-12 col-sm-6 col-md-4 mt-4">
                             <div class="card">
                                 <div class="card-body">
-                                    <div class="container p-0" style="position: relative;">
-                                        <center><img src="https://dummyimage.com/220x220/000/fff" alt="" style="min-width: 150px; min-height: 150px; max-width: 20vw; max-height: 20vw;"></center>
-                                        <img src="https://dummyimage.com/60x60/000/fff" alt="" style="border-radius: 50%; position: absolute; bottom: -10px; left: 10%">
+                                    <div class="container p-0">
+                                        <center><img src="https://dummyimage.com/220x220/000/fff" style="min-width: 150px; min-height: 150px; max-width: 20vw; max-height: 20vw;"></center>
                                     </div>
-                                    <h4 class="card-title mt-3">มกุล <?= $i ?></h4>
-                                    <h6 class="card-subtitle mb-3 text-muted"><?= "ระบบที่พัฒนา"?></h6>
+
+                                    <div class="d-flex justify-content-between mt-4">
+                                        <div>
+                                            <h4 class="card-title mt-3">มกุล <?= $i ?></h4>
+                                            <h6 class="card-subtitle mb-3 text-muted"><?= "ระบบที่พัฒนา"?></h6>
+                                        </div>
+                                        <div>
+                                            <img src="https://dummyimage.com/60x60/000/fff" style="border-radius: 50%;">
+                                        </div>
+                                    </div>
 
                                     <?php if ($obj_user->usr_remain_score > 0) :?>
                                         <div class="col-12">
-                                            <input class="mt-4 form-control score-input score-input-<?= $i ?>" type="number" min="1" step="1" placeholder="กรอกคะแนน" name="score_input_cluster[]"
+                                            <input class="mt-4 form-control score-input score-input-<?= $i ?>" type="number" min="1" step="1" placeholder="กรอกคะแนน" name="score_input_cluster[]" onkeypress="return event.charCode >= 48 && event.charCode <= 57" title="กรอกตัวเลขจำนวนเต็มเท่านั้น"
                                             oninput="input_handling.convert_to_positive(this); user.cal_user_score(this);">
                                         </div>
                                     <?php endif; ?>
@@ -100,7 +107,6 @@
 
             <div class="container my-5">
                 <h4 class="mb-2"><b>หมายเหตุ :</b></h4>
-                <p><?= $_SESSION["vote_status"] ?></p>
                 <p>1. กรอกคะแนนที่ท่านต้องการให้แต่ละมกุล (ไม่จำเป็นต้องครบทุกมกุล)</p>
                 <p>2. เมื่อต้องการโหวต กดปุ่ม "Vote"</p>
                 <p>3. กดปุ่ม "Confirm Vote" เพื่อโหวต หรือกด "Cancel" เพื่อยกเลิก</p>
