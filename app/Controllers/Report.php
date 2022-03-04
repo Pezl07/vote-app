@@ -13,10 +13,14 @@ class Report extends Vot_controller {
 
     public function index() {
         if (!isset($_SESSION["usr_id"]))
-            return $this->response->redirect(base_url('/Login/index'));
+            return $this->response->redirect(base_url('/login'));
+        if ($_SESSION["usr_role"] == 4) {
+            echo "Access denied";
+            exit(0);
+        }
 
         if (!isset($_SESSION["vote_status"]))
-        $_SESSION["vote_status"] = "";
+            $_SESSION["vote_status"] = "";
         
         // get user information
         $m_usr = new M_vot_user();
@@ -26,6 +30,13 @@ class Report extends Vot_controller {
     }
 
     public function show_report() {
+        if (!isset($_SESSION["usr_id"]))
+            return $this->response->redirect(base_url('/login'));
+        if ($_SESSION["usr_role"] != 4) {
+            echo "Access denied, Admin only";
+            exit(0);
+        }
+        
         $m_cst = new M_vot_cluster();
         $data['cluster'] = $m_cst->get_all();
         echo view('v_report', $data);
@@ -60,7 +71,7 @@ class Report extends Vot_controller {
             $_SESSION["vote_status"] = "fail";
         }
 
-        return $this->response->redirect(base_url() . "/Report/index");
+        return $this->response->redirect(base_url() . "/report");
     }
     
     public function add_total_score($score = NULL, $cst_id) {

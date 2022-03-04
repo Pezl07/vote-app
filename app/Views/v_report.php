@@ -15,6 +15,9 @@
     <link href="https://se.buu.ac.th/gami_ossd/assets/dist/css/KanitPrompt.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300&amp;display=swap" rel="stylesheet">
 
+	<!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet" />
+
     <style>
         * {
             font-family: 'Kanit', sans-serif !important;
@@ -44,7 +47,7 @@
         #profile_image {
             border-radius: 50%;
         }
-        .navbar {
+		nav.fluid-container {
             background-color: white !important;
             box-shadow: 1px 1px 5px 3px rgba(100,100,100,0.2);
         }
@@ -53,20 +56,19 @@
 </head>
 
 <body class="skin-blue sidebar-mini /*sidebar-collapse*/" style="height: auto; min-height: 100%;">
-
     <main class="main" id="top">
-        <nav class="navbar navbar-expand-lg navbar-light sticky-top" data-navbar-on-scroll="data-navbar-on-scroll">
-            <div class="container">
-                <img class="me-3" src="https://dummyimage.com/40x40/000/fff" alt="">
-                <a class="navbar-brand" href="<?= base_url() . "/Vote"?>">ระบบโหวต</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"> </span>
-                </button>
-                <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
-                        <span class="mt-1 me-5" style="font-size: 1.5rem">แต้มคงเหลือ <span id="remain_score"><?= $user_score?></span></span>
-                        <img src="https://dummyimage.com/40x40/000/fff" id="profile_image" alt="">
-                    </ul>
+        <nav class="fluid-container sticky-top p-2">
+            <div class="d-flex justify-content-between">
+                <div>
+                    <img class="me-3" src="<?= base_url() . "/assets/img/logo.png" ?>" style="width: 45px">
+                    <a href="<?= base_url() . "/" ?>">ระบบโหวต</a>
+                </div>
+
+                <div>
+					<a class="me-2" href="#">จัดการผู้ใช้</a>
+                    <img src="https://dummyimage.com/40x40/000/fff" id="profile_image">
+                    <span class="ms-2"><?= $_SESSION["usr_full_name"]?></span>
+                    <a class="btn ms-2" href="<?= base_url() . "/logout" ?>">Log out</a>
                 </div>
             </div>
         </nav>

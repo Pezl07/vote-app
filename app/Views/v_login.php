@@ -1,237 +1,156 @@
-<!--
-* v_login
-* Display show Login
-* @input    -
-* @output   Login
-* @author   Kittipod
-* @Create Date  2564-11-11
-*/
--->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Vote</title>
-    <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-    <!-- <link rel="icon" href="http://localhost/code_team4/Assets/img/icon.ico" type="image/x-icon" /> -->
-
-    <!-- Fonts and icons -->
-    <script src="http://localhost/code_team4/Assets/js/plugin/webfont/webfont.min.js"></script>
-    <script>
-    WebFont.load({
-        google: {
-            "families": ["Lato:300,400,700,900"]
-        },
-        custom: {
-            "families": ["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands",
-                "simple-line-icons"
-            ],
-            urls: ['http://localhost/code_team4/Assets/css/fonts.min.css']
-        },
-        active: function() {
-            sessionStorage.fonts = true;
-        }
-    });
-    </script>
-
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="http://localhost/code_team4/Assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://localhost/code_team4/Assets/css/atlantis.min.css">
-    <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link rel="stylesheet" href="http://localhost/code_team4/Assets/css/demo.css">
-
-    <!-- Font Awesome 4 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- Font Awesome 5 -->
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-
-    <!-- jQuery CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- Semantic UI CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
-        integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- Semantic UI JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
-        integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <!-- Daterange -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-    
-
-    <link rel="stylesheet" href="http://localhost/code_team4/Assets/css/main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>ระบบโหวต</title>
 </head>
-
 <style>
-    *{
+    * {
+        font-family: 'Kanit', sans-serif !important;
+    }
+    body {
         margin: 0;
         padding: 0;
     }
 
-    .bg_cdms {
-        height: 100%;
-        background: url("../../Assets/img/picture_camp.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
+    .divider:after,
+    .divider:before {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: #eee;
     }
 
-    .blur {
-        background: rgba(255, 255, 255, 0.25);
-        backdrop-filter: blur(8px);
-        height: 100%;
+    .h-custom {
+        height: calc(100% - 73px);
+    }
+
+    .container .h-custom{
         width: 100%;
+        min-width: 300px;
+        margin: auto auto;
+        max-width: 500px;
     }
 
-    .container {
-        background-color: #F1F5F9;
-        border-radius: 10px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        text-align: center;
-        display: flex;
-        width: 60%;
-        padding: 0 !important; 
-        max-width: 920px !important;
-    }
-
-    .img_cdms {
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-        object-fit: cover;
-        width: 50%;
-    }
-
-    label {
-        float: left;
-        font-size: 20px !important;
-        font-weight: bold !important;
-        margin-bottom: 10px;
-        color:#000 !important;
-    }
-
-    .input {
-        width: 100%;
-        /* background-color: #000; */
-    }
-
-    .content {
-        padding: 40px;
-        width: 35%;
-        height: 70%;
-        padding-top: 80px;
-        background-color: rgba(255, 255, 255, 0.5);
-        border-radius: 10px;
-        position: absolute;
-        transform: translate(-50%,-50%);
-        text-align: center;
-        /* display: flex; */
-        top: 45%;
-        left: 50%;
-    }
-
-    .button {
-        border-radius: 50px !important;
-        padding: 20px !important;
-        width: 80%;
-        background-color: #000 !important;
-        color: #fff !important;
+    .sub_container{
+        margin-top: 30px;
+        padding: 30px 30px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 50px;
+        border: 1px solid rgb(0, 0, 0, 0.9);
+        /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
 
     .fa_eye{
-        padding: 10px 10px 0 0;
         position: absolute;
-        right: 0;
+        top: 10px;
+        right: 10px;
+    }
+    .main {
+        overflow: hidden;
+        position: relative;
+        height: 100%;
+    }
+
+    .image {
+        opacity: 0.4;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .container {
+        position: relative;
     }
 
     #hide {
         display: none;
     }
 
-    #invalid {
-        color: red;
+    .password-input {
+        display: flex;
     }
-
-    @media only screen and (max-width: 768px) {
-        /* .img_cdms {
-            display: none;
-        } */
-        .content {
-            width: 50%;
-        }
-        .container {
-            width: 50%;
-        }
-        .title{
-            font-size: 1.5rem;
-        }
-        label {
-            font-size: 15px !important;
-        }
-        input::-webkit-input-placeholder {
-            font-size: 10px;
-        }
-    }
-
 </style>
 
 <body>
-    <div class="bg_cdms">
-        <div class="blur"></div>
+    <div class="main">
+        <img class="image" src="<?= base_url() . "/assets/img/picture_camp.png" ?>" alt="">
+        <section class="vh-100 container">
+            <div class="container h-custom">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class='sub_container'>
+                        <div class="logo text-center">
+                            <img src="<?= base_url() . "/assets/img/logo.png" ?>" width="300" height="300">
+                        </div>
+                        <h2 class="text-center">ระบบโหวต OSSD CAMP #10</h2>
+                        <h4 class="text-center">Login</h4>
+                        <form id="login_form" action="<?php echo base_url() . '/Login/login' ?>" method="POST">
+
+                            <!-- Username input -->
+                            <div class="form-outline mb-4">
+                                <input class="form-control form-control-lg" required
+                                placeholder="Enter username" type="text" name="usr_name" id="usr_name"
+                                value="<?php if (isset($_SESSION["usr_name"])) echo $_SESSION["usr_name"]?>" />
+                                <label class="form-label" for="usr_name">Username</label>
+                            </div>
+
+                            <!-- Password input -->
+                            <div class="form-outline mb-3 password-input">
+                                <input class="form-control form-control-lg" required
+                                placeholder="Enter password" type="password" name="usr_password" id="usr_password" />
+                                <label class="form-label" for="usr_password">Password</label>
+                                <div class="fa_eye">
+                                    <i class="far fa-eye-slash" id="show" onclick="show_eye()"></i>
+                                    <i class="far fa-eye" id="hide" onclick="show_eye()"></i>
+                                </div>
+                            </div>
+                            
+                            <?php if (isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] == false) : ?>
+                                <div class="alert alert-danger d-flex align-items-center" role="alert">
+                                    <i class="bi bi-x-circle me-2" style="font-size: 1.5rem "></i>
+                                    <div>Username หรือ Password ไม่ถูกต้อง</div>
+                                </div>
+                            <?php endif; ?>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="text-body">Forgot password?</a>
+                            </div>
+
+                            <div class="text-center pt-2 align-items-center">
+                                <button type="submit" class="btn btn-primary btn-lg"
+                                    style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
-    <!-- <div class="container"> -->
-
-            <!-- <img class="img_cdms" src="../../Assets/img/login_image.jpg" alt="Paris"> -->
-
-            <div class="content">
-                <!-- <img class="logo_cdms" src="../../Assets/img/icon.ico"> -->
-                <h1 class="title" style="color:#000; font-size:40px "> LOGIN </h1>
-                <form id="login_form" action="<?php echo base_url() . '/Login/login' ?>" method="POST">
-                    <div class="field">
-                        <p><label for="username">USERNAME</label></p>
-                        <div class="ui left icon input">
-                            <input placeholder="Enter username" type="text" name="username" id="username" value="<?php echo $_SESSION['fail']; ?>">
-                            <i class="far fa-user icon"></i>
-                        </div>
-                    </div>
-                    <div class="field mb-3">
-                        <p><label for="password" >PASSWORD</label></p>
-                        <div class="ui left icon input">
-                            <input placeholder="Enter password" type="password" name="password" id="password">
-                            <i class="fas fa-lock icon"></i>
-                            <div class="fa_eye">
-                                <i class="far fa-eye-slash" id="show" onclick="show_eye()"></i>
-                                <i class="far fa-eye" id="hide" onclick="show_eye()"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <?php if($_SESSION['invalid_password'] == true){ ?>
-                    <p id="invalid"> <?php echo 'Invalid username or password' ?> </p>
-                    <?php } ?>
-                    <input type="submit" class="ui  button mt-2" value="LOGIN">
-                </form>
-            </div>
-
-    <!-- </div> -->
 </body>
-
+<!-- MDB -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"></script>
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-    /*
-    * show_eye
-    * change eye
-    * @input    -
-    * @output   change eye hide password
-    * @author   Kittipod
-    * @Create Date  2564-11-18
-    */
     function show_eye() {
         var input_password = $('#password').attr('type');
         if(input_password === "password") {
@@ -245,7 +164,6 @@
         }
 
     }
-
 </script>
 
 </html>

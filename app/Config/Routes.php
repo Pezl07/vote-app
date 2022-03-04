@@ -18,8 +18,8 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php'))
  * --------------------------------------------------------------------
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('Dashboard');
-$routes->setDefaultMethod('dashboard_show');
+$routes->setDefaultController('Login');
+$routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override(function(){
 	echo view('v_404page');
@@ -35,8 +35,10 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Report::index');
+$routes->get('/vote', 'Report::index');
 $routes->get('/report', 'Report::show_report');
-$routes->get('/input', 'Report::show_input');
+$routes->get('/login', 'Login::index');
+$routes->get('/logout', 'Login::logout');
 
 /*
  * --------------------------------------------------------------------

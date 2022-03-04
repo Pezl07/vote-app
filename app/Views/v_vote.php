@@ -40,15 +40,15 @@
         <nav class="fluid-container sticky-top p-2">
             <div class="d-flex justify-content-between">
                 <div>
-                    <img class="me-3" src="https://dummyimage.com/40x40/000/fff">
-                    <a href="<?= base_url() . "/Report/index" ?>">ระบบโหวต</a>
+                    <img class="me-3" src="<?= base_url() . "/assets/img/logo.png" ?>" style="width: 45px">
+                    <a href="<?= base_url() . "/" ?>">ระบบโหวต</a>
                 </div>
 
                 <div>
                     <span class="mt-1 me-2">แต้มคงเหลือ <span id="remain_score"><?= $obj_user->usr_remain_score ?></span></span>
                     <img src="https://dummyimage.com/40x40/000/fff" id="profile_image">
                     <span class="ms-2"><?= $_SESSION["usr_full_name"]?></span>
-                    <a class="btn ms-2" href="<?= base_url() . "/Login/logout" ?>">Log out</a>
+                    <a class="btn ms-2" href="<?= base_url() . "/logout" ?>">Log out</a>
                 </div>
             </div>
         </nav>
@@ -70,7 +70,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="container p-0">
-                                        <center><img src="https://dummyimage.com/220x220/000/fff" style="min-width: 150px; min-height: 150px; max-width: 20vw; max-height: 20vw;"></center>
+                                        <center><img src="<?= "https://se.buu.ac.th/gami_ossd/assets/dist/img/cluster/cluster".$i.".png" ?>" style="min-height: 100px; height: 10rem; object-fit: cover"></center>
                                     </div>
 
                                     <div class="d-flex justify-content-between mt-4">
@@ -79,7 +79,7 @@
                                             <h6 class="card-subtitle mb-3 text-muted"><?= "ระบบที่พัฒนา"?></h6>
                                         </div>
                                         <div>
-                                            <img src="https://dummyimage.com/60x60/000/fff" style="border-radius: 50%;">
+                                            <img src="<?= "https://se.buu.ac.th/gami_ossd/assets/dist/img/cluster/cluster".$i.".png" ?>" style="border-radius: 50%; width: 60px; height: 60px; object-fit: cover">
                                         </div>
                                     </div>
 
