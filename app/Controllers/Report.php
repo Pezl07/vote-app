@@ -53,14 +53,13 @@ class Report extends Vot_controller {
         if ($this->check_score_enough($sum_score)){
             $_SESSION["vote_status"] = "success";
 
-            // $number = mt_rand(0,1);
-            $number = 0;
+            $number = mt_rand(0,1);
             if($number == 0) {
                 $this->process1($arr_score_input);
             }
-            // else {
-            //     $this->process2($arr_score_input);
-            // }
+            else {
+                $this->process2($arr_score_input);
+            }
 
             $this->minus_remain_score($sum_score);
             for ($i = 0 ; $i < count($arr_score_input); $i++) {
