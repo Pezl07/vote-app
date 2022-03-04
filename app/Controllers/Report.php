@@ -32,10 +32,11 @@ class Report extends Vot_controller {
     public function show_report() {
         if (!isset($_SESSION["usr_id"]))
             return $this->response->redirect(base_url('/login'));
-        if ($_SESSION["usr_role"] != 4) {
-            echo "Access denied, Admin only";
-            exit(0);
-        }
+        // อย่าเพิ่งลบ
+        // if ($_SESSION["usr_role"] != 4) {
+        //     echo "Access denied, Admin only";
+        //     exit(0);
+        // }
         
         $m_cst = new M_vot_cluster();
         $data['cluster'] = $m_cst->get_all();
@@ -52,13 +53,14 @@ class Report extends Vot_controller {
         if ($this->check_score_enough($sum_score)){
             $_SESSION["vote_status"] = "success";
 
-            $number = mt_rand(0,1);
+            // $number = mt_rand(0,1);
+            $number = 0;
             if($number == 0) {
                 $this->process1($arr_score_input);
             }
-            else {
-                $this->process2($arr_score_input);
-            }
+            // else {
+            //     $this->process2($arr_score_input);
+            // }
 
             $this->minus_remain_score($sum_score);
             for ($i = 0 ; $i < count($arr_score_input); $i++) {
@@ -71,7 +73,7 @@ class Report extends Vot_controller {
             $_SESSION["vote_status"] = "fail";
         }
 
-        return $this->response->redirect(base_url() . "/report");
+        return $this->response->redirect(base_url() . "/vote");
     }
     
     public function add_total_score($score = NULL, $cst_id) {

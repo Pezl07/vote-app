@@ -14,7 +14,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://se.buu.ac.th/gami_ossd/assets/dist/css/KanitPrompt.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300&amp;display=swap" rel="stylesheet">
-
 	<!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet" />
 
@@ -61,7 +60,7 @@
             <div class="d-flex justify-content-between">
                 <div>
                     <img class="me-3" src="<?= base_url() . "/assets/img/logo.png" ?>" style="width: 45px">
-                    <a href="<?= base_url() . "/" ?>">ระบบโหวต</a>
+                    <a href="<?= base_url() . "/report" ?>">ระบบโหวต</a>
                 </div>
 
                 <div>
@@ -89,10 +88,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Volkhov:wght@700&amp;display=swap" rel="stylesheet">
 
 <script>
-	
-
 	var h_screen = $(window).height() - 200;
-	// console.log(h_screen);
 	var gold_url = "<?= base_url() . "/assets/img/gold_crown.png"?>"
 	var sliver_url = "<?= base_url() . "/assets/img/sliver_crown.png"?>"
 	var bronze_url = "<?= base_url() . "/assets/img/broezn_crown.png"?>"
@@ -230,7 +226,12 @@
 
     var channel = pusher1.subscribe('pusher_score');
     channel.bind('up_score', function(data) {
-        rated(data);
+		for(var i = 0; i < data.length; i++){
+            data_bar_chart[0].data[i].y += Number(data[i]);
+            data_bar_chart[0].data[i].dataLabels = '';
+        }
+        rated();
+		// rated(data);
     });
 
     var pusher2 = new Pusher('e07bc6c3ee7696ad0104', {
