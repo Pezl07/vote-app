@@ -34,20 +34,17 @@
         background: #eee;
     }
 
-    .h-custom {
-        height: calc(100% - 73px);
-    }
-
     .container .h-custom{
+        height: 100%;
         width: 100%;
-        min-width: 300px;
-        margin: auto auto;
-        max-width: 500px;
     }
 
     .sub_container{
-        margin-top: 30px;
-        padding: 30px 30px;
+        min-width: 300px;
+        min-height: 400px;
+        max-height: 800px;
+        max-width: 500px;
+        padding: 30px;
         background-color: rgba(255, 255, 255, 0.9);
         border-radius: 50px;
         border: 1px solid rgb(0, 0, 0, 0.9);
@@ -97,7 +94,7 @@
                 <div class="row d-flex justify-content-center align-items-center h-100">
                     <div class='sub_container'>
                         <div class="logo text-center">
-                            <img src="<?= base_url() . "/assets/img/logo.png" ?>" width="300" height="300">
+                            <img src="<?= base_url() . "/assets/img/logo.png" ?>" width="200" height="200">
                         </div>
                         <h2 class="text-center">ระบบโหวต OSSD CAMP #10</h2>
                         <h4 class="text-center">Login</h4>
