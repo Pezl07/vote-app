@@ -114,8 +114,8 @@
                                 placeholder="Enter password" type="password" name="usr_password" id="usr_password" />
                                 <label class="form-label" for="usr_password">Password</label>
                                 <div class="fa_eye">
-                                    <i class="far fa-eye-slash" id="show" onclick="show_eye()"></i>
-                                    <i class="far fa-eye" id="hide" onclick="show_eye()"></i>
+                                    <i class="bi bi-eye-slash" id="show" onclick="show_eye()"></i>
+                                    <i class="bi bi-eye" id="hide" onclick="show_eye()"></i>
                                 </div>
                             </div>
                             
@@ -149,13 +149,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
     function show_eye() {
-        var input_password = $('#password').attr('type');
+        var input_password = $('#usr_password').attr('type');
         if(input_password === "password") {
-            $("#password").prop("type", "text")
+            $("#usr_password").prop("type", "text")
             $('#hide').css("display", "inline-block");
             $('#show').css("display", "none");
         }else{
-            $("#password").prop("type", "password")
+            $("#usr_password").prop("type", "password")
             $('#hide').css("display", "none");
             $('#show').css("display", "inline-block");
         }
