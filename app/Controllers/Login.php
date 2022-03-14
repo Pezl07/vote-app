@@ -4,10 +4,24 @@ use App\Models\M_vot_user;
 class Login extends Vot_controller {
     public function __construct() {
         session_start();
+		require_once APPPATH. "libraries/vendor/autoload.php";
+
+		$this->google_client = new \Google_Client();
+        // Google Client ID, Secret
+		$this->google_client->setClientId("475984984652-nu3047ihal17eviia0b0kt6c80eg1riv.apps.googleusercontent.com");
+		$this->google_client->setClientSecret("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");
+
+        // Redirect page
+		$this->google_client->setRedirectUri(base_url() . "/Login/google_auth");
+        // Access gmail
+		$this->google_client->addScope("email");
+        // Access profile
+		$this->google_client->addScope("profile");
     }
 
     public function index() {
-        echo view('v_login.php');
+        $data['google_button'] = '<a class="btn btn-outline-secondary" href="'.$this->google_client->createAuthUrl().'" ><img src="https://freesvg.org/img/1534129544.png" alt="Login With Google" style="width: 30px"><b class="ms-1 mt-2">Google</b></a>';
+        echo view('v_login.php', $data);
     }
 
     public function login(){
@@ -35,6 +49,26 @@ class Login extends Vot_controller {
             return $this->response->redirect(base_url('/login'));
         }
     }
+
+    public function google_auth() {
+		$token = $this->google_client->fetchAccessTokenWithAuthCode($this->request->getVar('code'));
+		if(!isset($token['error'])){
+			$this->google_client->setAccessToken($token['access_token']);
+            $_SESSION["access_token"] = $token['access_token'];
+
+			$google_service = new \Google_Service_Oauth2($this->google_client);
+
+			// Get user data from google
+			$data = $google_service->userinfo->get();
+	
+            $_SESSION["logged_in"] = true;
+            $_SESSION["usr_id"] = $data['id'];
+            $_SESSION["usr_full_name"] = $data['givenName']. " ".$data['familyName'];
+            $_SESSION["usr_role"] = 1;
+            $_SESSION["login_by_google"] = true;
+		}
+		return redirect()->to(base_url()."/vote");
+	}
 
     public function logout() {
         session_unset();

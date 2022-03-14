@@ -133,6 +133,7 @@
                             <div class="text-center pt-2 align-items-center">
                                 <button type="submit" class="btn btn-primary btn-lg"
                                     style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+                                <?php echo $google_button ?>
                             </div>
 
                         </form>

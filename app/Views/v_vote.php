@@ -83,7 +83,7 @@
                 </div>
 
                 <div class="d-flex justify-content-center info" >
-                    <!-- <span class="col-3 text-center">แต้มคงเหลือ <span id="remain_score"><?= $obj_user->usr_remain_score ?></span></span> -->
+                    
                     <img class="col-1 mt-1 text-center" src="https://dummyimage.com/40x40/000/fff" id="profile_image">
                     <span class="col-7 text-center info_usr">
                         <?= $_SESSION["usr_full_name"]?>
@@ -91,7 +91,7 @@
                             <div class="clus">มกุล 4 &nbsp;</div>
                             <div class="coin">
                                 <i class="bi bi-coin"></i>
-                                <span id="remain_score"><?= $obj_user->usr_remain_score ?></span>
+                                <span id="remain_score"></span>
                             </div>
                         </div>
                     </span>
