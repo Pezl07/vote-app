@@ -64,10 +64,16 @@ class Login extends Vot_controller {
             $_SESSION["logged_in"] = true;
             $_SESSION["usr_id"] = $data['id'];
             $_SESSION["usr_full_name"] = $data['givenName']. " ".$data['familyName'];
+            $_SESSION["user_email"] = $data['email']; 
             $_SESSION["usr_role"] = 1;
             $_SESSION["login_by_google"] = true;
+
+            if ($this->check_valid_email($_SESSION["user_email"])) {
+                return $this->response->redirect(base_url('/vote'));
+            } else {
+                return $this->response->redirect(base_url('/login'));
+            }
 		}
-		return redirect()->to(base_url()."/vote");
 	}
 
     public function logout() {
@@ -75,5 +81,11 @@ class Login extends Vot_controller {
         session_destroy();
         return $this->response->redirect(base_url('/login'));
     }
+
+    public function check_valid_email($email) {
+        return ($email[0] == "6" && substr($email, 2, 2) == "16" && substr($email, 8) == "@go.buu.ac.th");
+    }
+
+    // public function is_user
 
 }

@@ -91,7 +91,7 @@
                             <div class="clus">มกุล 4 &nbsp;</div>
                             <div class="coin">
                                 <i class="bi bi-coin"></i>
-                                <span id="remain_score"></span>
+                                <span id="remain_score"><?= $obj_user->usr_remain_score ?></span>
                             </div>
                         </div>
                     </span>
