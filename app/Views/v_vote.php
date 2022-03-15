@@ -83,7 +83,6 @@
                 </div>
 
                 <div class="d-flex justify-content-center info" >
-                    
                     <img class="col-1 mt-1 text-center" src="https://dummyimage.com/40x40/000/fff" id="profile_image">
                     <span class="col-7 text-center info_usr">
                         <?= $_SESSION["usr_full_name"]?>
@@ -105,7 +104,7 @@
             </div>
         </nav>
         
-        <form id="vote_form" action="<?= base_url() . "/Report/process"?>" method="POST">
+        <form id="vote_form" action="<?= base_url() . "/Report/vote"?>" method="POST">
         <div class="container">
             <center><h1 class="mt-5">
                 <?php

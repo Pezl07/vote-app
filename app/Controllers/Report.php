@@ -44,11 +44,9 @@ class Report extends Vot_controller {
         echo view('v_report', $data);
     }
     
-    public function process() {
+    public function vote() {
         $arr_score_input =  $this->request->getPost("score_input_cluster");
-
         $m_vot = new M_vot_vote();
-
         $sum_score = array_sum($arr_score_input);
         
         if ($this->check_score_enough($sum_score)){
@@ -56,10 +54,10 @@ class Report extends Vot_controller {
 
             $number = mt_rand(0,1);
             if($number == 0) {
-                $this->process1($arr_score_input);
+                $this->pusher_trigger1($arr_score_input);
             }
             else {
-                $this->process2($arr_score_input);
+                $this->pusher_trigger2($arr_score_input);
             }
 
             $this->minus_remain_score($sum_score);
@@ -95,7 +93,7 @@ class Report extends Vot_controller {
         $m_usr->minus_usr_remain_score($score, $_SESSION["usr_id"]);
     }
 
-    public function process1($obj_score_input) {
+    public function pusher_trigger1($obj_score_input) {
         $app_id = "1354801";
         $key = "b485b70127147958e1fa";
         $secret = "fc79828e41d97bae4df6";
@@ -105,7 +103,7 @@ class Report extends Vot_controller {
         $pusher->trigger('pusher_score', 'up_score', $data);
     }
 
-    public function process2($obj_score_input) {
+    public function pusher_trigger2($obj_score_input) {
         $app_id = "1354955";
         $key = "e07bc6c3ee7696ad0104";
         $secret = "5a4aae53ea8f5fc88003";
