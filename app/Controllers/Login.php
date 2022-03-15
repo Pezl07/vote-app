@@ -1,6 +1,8 @@
 <?php
 namespace App\Controllers;
+use App\Controllers\User;
 use App\Models\M_vot_user;
+
 class Login extends Vot_controller {
     public function __construct() {
         session_start();
@@ -21,7 +23,8 @@ class Login extends Vot_controller {
 
     public function index() {
         $data['google_button'] = '<a class="btn btn-outline-secondary" href="'.$this->google_client->createAuthUrl().'" ><img src="https://freesvg.org/img/1534129544.png" alt="Login With Google" style="width: 30px"><b class="ms-1 mt-2">Google</b></a>';
-        echo view('v_login.php', $data);
+        // echo view('v_login.php', $data);
+        echo view('v_login.php');
     }
 
     public function login(){
@@ -34,6 +37,7 @@ class Login extends Vot_controller {
         if($usr_password === $obj_user->usr_password) {
             $_SESSION["logged_in"] = true;
             $_SESSION["usr_id"] =  $obj_user->usr_id;
+            $_SESSION["usr_name"] = $obj_user->usr_name;
             $_SESSION["usr_full_name"] = $obj_user->usr_full_name;
             $_SESSION["usr_role"] = $obj_user->usr_role;
 
@@ -60,32 +64,40 @@ class Login extends Vot_controller {
 
 			// Get user data from google
 			$data = $google_service->userinfo->get();
-	
+
             $_SESSION["logged_in"] = true;
-            $_SESSION["usr_id"] = $data['id'];
+            // $_SESSION["usr_id"] = $data['id'];
             $_SESSION["usr_full_name"] = $data['givenName']. " ".$data['familyName'];
-            $_SESSION["user_email"] = $data['email']; 
+            $_SESSION["usr_name"] = $data['email']; 
             $_SESSION["usr_role"] = 1;
+            $_SESSION["usr_image"] = $data['picture'];
             $_SESSION["login_by_google"] = true;
 
-            if ($this->check_valid_email($_SESSION["user_email"])) {
-                return $this->response->redirect(base_url('/vote'));
-            } else {
+            $obj_user = new User(
+                NULL,
+                $_SESSION["usr_name"],
+                NULL,
+                $_SESSION["usr_full_name"],
+                NULL,
+                1,
+                500,
+                $_SESSION["usr_image"]
+            );
+            if (!$obj_user->check_valid_usr_name()) {
                 return $this->response->redirect(base_url('/login'));
             }
+            if (!$obj_user->check_user_exist()) {   
+                $obj_user->insert_user();
+            }
+            return $this->response->redirect(base_url('/vote'));
 		}
 	}
-
     public function logout() {
         session_unset();
         session_destroy();
         return $this->response->redirect(base_url('/login'));
     }
 
-    public function check_valid_email($email) {
-        return ($email[0] == "6" && substr($email, 2, 2) == "16" && substr($email, 8) == "@go.buu.ac.th");
-    }
-
-    // public function is_user
+    
 
 }

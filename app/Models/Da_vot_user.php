@@ -12,4 +12,8 @@ class Da_vot_user extends Model
         'usr_name', 'usr_password', 'usr_full_name', 'usr_cluster_id ', 'usr_role', 'usr_remain_score', 'usr_image'
     ];
 
+    public function insert_user($usr_name, $usr_password = NULL, $usr_full_name, $usr_cluster_id = NULL, $usr_role, $usr_remain_score, $usr_image = NULL) {
+        $sql = "INSERT INTO $this->table VALUES(NULL, '$usr_name', '$usr_password', '$usr_full_name', '$usr_cluster_id', '$usr_role', '$usr_remain_score', '$usr_image')";
+        $this->db->query($sql);
+    }
 }

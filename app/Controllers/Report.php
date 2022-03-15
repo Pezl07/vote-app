@@ -12,7 +12,7 @@ class Report extends Vot_controller {
     }
 
     public function index() {
-        if (!isset($_SESSION["usr_id"])) {
+        if (!isset($_SESSION["usr_name"])) {
             return $this->response->redirect(base_url('/login'));
         }
         if ($_SESSION["usr_role"] == 4) {
@@ -25,7 +25,10 @@ class Report extends Vot_controller {
         
         // get user information
         $m_usr = new M_vot_user();
-        $obj_user = $m_usr->get_by_usr_id($_SESSION["usr_id"]);
+        if (isset($_SESSION["login_by_google"]))
+            $obj_user = $m_usr->get_by_usr_name($_SESSION["usr_name"]);
+        else
+            $obj_user = $m_usr->get_by_usr_id($_SESSION["usr_id"]);
         $data["obj_user"] = $obj_user;
         echo view("v_vote", $data);
     }
