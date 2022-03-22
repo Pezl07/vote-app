@@ -7,13 +7,8 @@ use CodeIgniter\Model;
 class Da_vot_user extends Model
 {
     protected $table = 'vot_user';
-    protected $primaryKey = 'usr_id ';
+    protected $primaryKey = 'usr_id';
     protected $allowedFields = [
-        'usr_name', 'usr_password', 'usr_full_name', 'usr_cluster_id ', 'usr_role', 'usr_remain_score', 'usr_image'
+        'usr_name', 'usr_password', 'usr_full_name', 'usr_cluster_id', 'usr_role', 'usr_remain_score', 'usr_image'
     ];
-
-    public function insert_user($usr_name, $usr_password = NULL, $usr_full_name, $usr_cluster_id = NULL, $usr_role, $usr_remain_score, $usr_image = NULL) {
-        $sql = "INSERT INTO $this->table VALUES(NULL, '$usr_name', '$usr_password', '$usr_full_name', '$usr_cluster_id', '$usr_role', '$usr_remain_score', '$usr_image')";
-        $this->db->query($sql);
-    }
 }

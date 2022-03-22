@@ -6,7 +6,6 @@ use App\Models\M_vot_cluster;
 use App\Models\M_vot_user;
 
 class Report extends Vot_controller {
-
     function __construct() {
         session_start();
     }

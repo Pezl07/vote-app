@@ -1,0 +1,383 @@
+CRITICAL - 2022-03-21 21:25:20 --> Invalid file: v_user_list.php
+#0 C:\xampp\htdocs\vote_app\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_user_list.php')
+#1 C:\xampp\htdocs\vote_app\system\Common.php(1271): CodeIgniter\View\View->render('v_user_list', Array, true)
+#2 C:\xampp\htdocs\vote_app\app\Controllers\User_manage.php(15): view('v_user_list', Array)
+#3 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(928): App\Controllers\User_manage->index()
+#4 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User_manage))
+#5 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\vote_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-21 21:25:20 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\View\Exceptions\ViewException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\View\Exceptions\ViewException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-21 21:25:39 --> Invalid file: v_user_list.php
+#0 C:\xampp\htdocs\vote_app\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_user_list.php')
+#1 C:\xampp\htdocs\vote_app\system\Common.php(1271): CodeIgniter\View\View->render('v_user_list', Array, true)
+#2 C:\xampp\htdocs\vote_app\app\Controllers\User_manage.php(12): view('v_user_list', Array)
+#3 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(928): App\Controllers\User_manage->index()
+#4 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User_manage))
+#5 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\vote_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-21 21:25:39 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\View\Exceptions\ViewException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\View\Exceptions\ViewException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-21 21:25:40 --> Invalid file: v_user_list.php
+#0 C:\xampp\htdocs\vote_app\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_user_list.php')
+#1 C:\xampp\htdocs\vote_app\system\Common.php(1271): CodeIgniter\View\View->render('v_user_list', Array, true)
+#2 C:\xampp\htdocs\vote_app\app\Controllers\User_manage.php(12): view('v_user_list', Array)
+#3 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(928): App\Controllers\User_manage->index()
+#4 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User_manage))
+#5 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\vote_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-21 21:25:40 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\View\Exceptions\ViewException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\View\Exceptions\ViewException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-21 21:25:40 --> Invalid file: v_user_list.php
+#0 C:\xampp\htdocs\vote_app\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_user_list.php')
+#1 C:\xampp\htdocs\vote_app\system\Common.php(1271): CodeIgniter\View\View->render('v_user_list', Array, true)
+#2 C:\xampp\htdocs\vote_app\app\Controllers\User_manage.php(12): view('v_user_list', Array)
+#3 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(928): App\Controllers\User_manage->index()
+#4 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User_manage))
+#5 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\vote_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-21 21:25:40 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\View\Exceptions\ViewException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\View\Exceptions\ViewException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-21 21:25:40 --> Invalid file: v_user_list.php
+#0 C:\xampp\htdocs\vote_app\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_user_list.php')
+#1 C:\xampp\htdocs\vote_app\system\Common.php(1271): CodeIgniter\View\View->render('v_user_list', Array, true)
+#2 C:\xampp\htdocs\vote_app\app\Controllers\User_manage.php(12): view('v_user_list', Array)
+#3 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(928): App\Controllers\User_manage->index()
+#4 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User_manage))
+#5 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\vote_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-21 21:25:40 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\View\Exceptions\ViewException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\View\Exceptions\ViewException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-21 21:25:40 --> Invalid file: v_user_list.php
+#0 C:\xampp\htdocs\vote_app\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_user_list.php')
+#1 C:\xampp\htdocs\vote_app\system\Common.php(1271): CodeIgniter\View\View->render('v_user_list', Array, true)
+#2 C:\xampp\htdocs\vote_app\app\Controllers\User_manage.php(12): view('v_user_list', Array)
+#3 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(928): App\Controllers\User_manage->index()
+#4 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User_manage))
+#5 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\vote_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-21 21:25:40 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\View\Exceptions\ViewException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\View\Exceptions\ViewException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-21 21:25:40 --> Invalid file: v_user_list.php
+#0 C:\xampp\htdocs\vote_app\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_user_list.php')
+#1 C:\xampp\htdocs\vote_app\system\Common.php(1271): CodeIgniter\View\View->render('v_user_list', Array, true)
+#2 C:\xampp\htdocs\vote_app\app\Controllers\User_manage.php(12): view('v_user_list', Array)
+#3 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(928): App\Controllers\User_manage->index()
+#4 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User_manage))
+#5 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\vote_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-21 21:25:40 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\View\Exceptions\ViewException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\View\Exceptions\ViewException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-21 21:25:41 --> Invalid file: v_user_list.php
+#0 C:\xampp\htdocs\vote_app\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_user_list.php')
+#1 C:\xampp\htdocs\vote_app\system\Common.php(1271): CodeIgniter\View\View->render('v_user_list', Array, true)
+#2 C:\xampp\htdocs\vote_app\app\Controllers\User_manage.php(12): view('v_user_list', Array)
+#3 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(928): App\Controllers\User_manage->index()
+#4 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User_manage))
+#5 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\vote_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-21 21:25:41 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\View\Exceptions\ViewException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\View\Exceptions\ViewException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-21 21:25:45 --> Invalid file: v_user_list.php
+#0 C:\xampp\htdocs\vote_app\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_user_list.php')
+#1 C:\xampp\htdocs\vote_app\system\Common.php(1271): CodeIgniter\View\View->render('v_user_list', Array, true)
+#2 C:\xampp\htdocs\vote_app\app\Controllers\User_manage.php(12): view('v_user_list', Array)
+#3 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(928): App\Controllers\User_manage->index()
+#4 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User_manage))
+#5 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\vote_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-21 21:25:45 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\View\Exceptions\ViewException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\View\Exceptions\ViewException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-21 21:25:47 --> Invalid file: v_user_list.php
+#0 C:\xampp\htdocs\vote_app\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_user_list.php')
+#1 C:\xampp\htdocs\vote_app\system\Common.php(1271): CodeIgniter\View\View->render('v_user_list', Array, true)
+#2 C:\xampp\htdocs\vote_app\app\Controllers\User_manage.php(12): view('v_user_list', Array)
+#3 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(928): App\Controllers\User_manage->index()
+#4 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User_manage))
+#5 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\vote_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-21 21:25:47 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\View\Exceptions\ViewException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\View\Exceptions\ViewException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-21 21:26:07 --> Invalid file: v_user_list.php
+#0 C:\xampp\htdocs\vote_app\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_user_list.php')
+#1 C:\xampp\htdocs\vote_app\system\Common.php(1271): CodeIgniter\View\View->render('v_user_list', Array, true)
+#2 C:\xampp\htdocs\vote_app\app\Controllers\User_manage.php(12): view('v_user_list', Array)
+#3 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(928): App\Controllers\User_manage->index()
+#4 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User_manage))
+#5 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\vote_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-21 21:26:07 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\View\Exceptions\ViewException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\View\Exceptions\ViewException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-21 21:26:08 --> Invalid file: v_user_list.php
+#0 C:\xampp\htdocs\vote_app\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_user_list.php')
+#1 C:\xampp\htdocs\vote_app\system\Common.php(1271): CodeIgniter\View\View->render('v_user_list', Array, true)
+#2 C:\xampp\htdocs\vote_app\app\Controllers\User_manage.php(12): view('v_user_list', Array)
+#3 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(928): App\Controllers\User_manage->index()
+#4 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User_manage))
+#5 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\vote_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-21 21:26:08 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\View\Exceptions\ViewException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\View\Exceptions\ViewException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-21 21:26:08 --> Invalid file: v_user_list.php
+#0 C:\xampp\htdocs\vote_app\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_user_list.php')
+#1 C:\xampp\htdocs\vote_app\system\Common.php(1271): CodeIgniter\View\View->render('v_user_list', Array, true)
+#2 C:\xampp\htdocs\vote_app\app\Controllers\User_manage.php(12): view('v_user_list', Array)
+#3 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(928): App\Controllers\User_manage->index()
+#4 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User_manage))
+#5 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\vote_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-21 21:26:08 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\View\Exceptions\ViewException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\View\Exceptions\ViewException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-21 21:26:08 --> Invalid file: v_user_list.php
+#0 C:\xampp\htdocs\vote_app\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_user_list.php')
+#1 C:\xampp\htdocs\vote_app\system\Common.php(1271): CodeIgniter\View\View->render('v_user_list', Array, true)
+#2 C:\xampp\htdocs\vote_app\app\Controllers\User_manage.php(12): view('v_user_list', Array)
+#3 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(928): App\Controllers\User_manage->index()
+#4 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User_manage))
+#5 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\vote_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-21 21:26:08 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\View\Exceptions\ViewException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\View\Exceptions\ViewException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-21 21:31:37 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\vote_app\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\vote_app\system\Common.php(1271): CodeIgniter\View\View->render('User_manage/v_u...', Array, true)
+#2 C:\xampp\htdocs\vote_app\app\Controllers\User_manage.php(12): view('User_manage/v_u...', Array)
+#3 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(928): App\Controllers\User_manage->index()
+#4 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User_manage))
+#5 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\vote_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-21 21:31:37 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ParseError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ParseError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-21 21:31:52 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\vote_app\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\vote_app\system\Common.php(1271): CodeIgniter\View\View->render('User_manage/v_u...', Array, true)
+#2 C:\xampp\htdocs\vote_app\app\Controllers\User_manage.php(12): view('User_manage/v_u...', Array)
+#3 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(928): App\Controllers\User_manage->index()
+#4 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User_manage))
+#5 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\vote_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-21 21:31:52 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ParseError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ParseError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-21 21:31:52 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\vote_app\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\vote_app\system\Common.php(1271): CodeIgniter\View\View->render('User_manage/v_u...', Array, true)
+#2 C:\xampp\htdocs\vote_app\app\Controllers\User_manage.php(12): view('User_manage/v_u...', Array)
+#3 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(928): App\Controllers\User_manage->index()
+#4 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User_manage))
+#5 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\vote_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-21 21:31:52 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ParseError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ParseError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-03-21 22:42:19 --> Unknown column 'rol_id' in 'order clause'
+CRITICAL - 2022-03-21 22:42:19 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\vote_app\system\BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\xampp\htdocs\vote_app\app\Controllers\User_manage.php(27): CodeIgniter\BaseModel->findAll()
+#2 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(928): App\Controllers\User_manage->index()
+#3 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User_manage))
+#4 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\vote_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-21 22:42:19 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-21 22:45:54 --> Call to a member function getPost() on null
+#0 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(928): App\Controllers\User_manage->insert()
+#1 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User_manage))
+#2 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\vote_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-21 22:45:54 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-21 23:27:40 --> Call to undefined function App\Controllers\delay()
+#0 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(928): App\Controllers\User_ajax->get_user_ajax()
+#1 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User_ajax))
+#2 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\vote_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-21 23:34:57 --> Return value of CodeIgniter\BaseModel::transformDataToArray() must be of the type array, string returned
+#0 C:\xampp\htdocs\vote_app\system\BaseModel.php(880): CodeIgniter\BaseModel->transformDataToArray('105', 'update')
+#1 C:\xampp\htdocs\vote_app\system\Model.php(718): CodeIgniter\BaseModel->update(Array, '105')
+#2 C:\xampp\htdocs\vote_app\app\Controllers\User_manage.php(56): CodeIgniter\Model->update(Array, '105')
+#3 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(928): App\Controllers\User_manage->update()
+#4 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User_manage))
+#5 C:\xampp\htdocs\vote_app\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\vote_app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-21 23:34:57 --> Uncaught ErrorException: include(): Filename cannot be empty in C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\vote_app\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(TypeError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(TypeError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
