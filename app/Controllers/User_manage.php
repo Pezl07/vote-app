@@ -50,6 +50,8 @@ class User_manage extends Vot_controller {
             
             if ($data['usr_password'] == '') {
                 unset($data['usr_password']);
+            } else {
+                $data['usr_password'] = md5($data['usr_password']);
             }
 
             if ($data['usr_role'] != '1') {
