@@ -47,7 +47,7 @@
                 padding: 0px;
                 width: 40% !important;
             }
-            .btn{
+            .btn-outline-danger{
                 font-size: 5px;
             }
             #profile_image {
