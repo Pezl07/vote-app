@@ -14,10 +14,10 @@ class Report extends Vot_controller {
         if (!isset($_SESSION["usr_name"])) {
             return $this->response->redirect(base_url('/login'));
         }
-        if ($_SESSION["usr_role"] == 5) {
-            echo "Access denied";
-            exit(0);
-        }
+        // if ($_SESSION["usr_role"] == 5) {
+        //     echo "Access denied";
+        //     exit(0);
+        // }
 
         if (!isset($_SESSION["vote_status"]))
             $_SESSION["vote_status"] = "";
