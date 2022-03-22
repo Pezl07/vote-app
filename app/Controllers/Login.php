@@ -20,13 +20,11 @@ class Login extends Vot_controller {
         // Access profile
 		$this->google_client->addScope("profile");
     }
-
     public function index() {
         $data['google_button'] = '<a class="btn btn-outline-secondary" href="'.$this->google_client->createAuthUrl().'" ><img src="https://freesvg.org/img/1534129544.png" alt="Login With Google" style="width: 30px"><b class="ms-1 mt-2">Google</b></a>';
         // echo view('v_login.php', $data);
         echo view('v_login.php');
     }
-
     public function login(){
         $usr_name = $this->request->getPost('usr_name');
         $usr_password = $this->request->getPost('usr_password');
@@ -34,14 +32,14 @@ class Login extends Vot_controller {
         $m_user = new M_vot_user();
         $obj_user = $m_user->get_by_usr_name($usr_name);
 
-        if($usr_password === $obj_user->usr_password) {
+        if(md5($usr_password) === $obj_user->usr_password) {
             $_SESSION["logged_in"] = true;
             $_SESSION["usr_id"] =  $obj_user->usr_id;
             $_SESSION["usr_name"] = $obj_user->usr_name;
             $_SESSION["usr_full_name"] = $obj_user->usr_full_name;
             $_SESSION["usr_role"] = $obj_user->usr_role;
 
-            if ($_SESSION["usr_role"] == 4) {
+            if ($_SESSION["usr_role"] == 5) {
                 return $this->response->redirect(base_url('/report'));
             }
             return $this->response->redirect(base_url('/vote'));
@@ -53,7 +51,6 @@ class Login extends Vot_controller {
             return $this->response->redirect(base_url('/login'));
         }
     }
-
     public function google_auth() {
 		$token = $this->google_client->fetchAccessTokenWithAuthCode($this->request->getVar('code'));
 		if(!isset($token['error'])){
@@ -97,7 +94,4 @@ class Login extends Vot_controller {
         session_destroy();
         return $this->response->redirect(base_url('/login'));
     }
-
-    
-
 }

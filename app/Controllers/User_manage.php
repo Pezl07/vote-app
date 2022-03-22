@@ -35,6 +35,7 @@ class User_manage extends Vot_controller {
         try {
             $m_usr = new M_vot_user();
             $data = $this->request->getPost();
+            $data['usr_password'] = md5($data['usr_password']);
             $m_usr->insert($data);
 
             return $this->response->redirect(base_url() . "/User_manage");
