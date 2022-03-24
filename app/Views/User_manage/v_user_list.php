@@ -20,103 +20,92 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet" />
 
     <style>
-    * {
-        font-family: 'Kanit', sans-serif !important;
-    }
-
-    #profile_image {
-        width: 45px;
-        height: 45px;
-        border-radius: 50%;
-    }
-
-    .modal-content {
-        border-radius: 0px !important;
-    }
-
-    nav.fluid-container {
-        background-color: white !important;
-        box-shadow: 1px 1px 5px 3px rgba(100, 100, 100, 0.2);
-    }
-
-    .bi-box-arrow-right {
-        font-weight: bold;
-        display: none;
-    }
-
-    @media (max-width: 767px) {
-        .info {
-            font-size: 12px;
-        }
-
-        .btn-logout {
-            padding: 0px;
-            width: 40% !important;
-        }
-
-        .btn {
-            font-size: 5px;
+        * {
+            font-family: 'Kanit', sans-serif !important;
         }
 
         #profile_image {
-            display: none;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
         }
 
-        .info_usr {
-            margin-top: 5px;
-            margin-left: 10px;
-            width: 60% !important;
+        .modal-content {
+            border-radius: 0px !important;
         }
 
-        .logo_sys a {
-            display: none;
-        }
-
-        .sticky-top .d-flex {
-            justify-content: center !important;
+        nav.fluid-container {
+            background-color: white !important;
+            box-shadow: 1px 1px 5px 3px rgba(100, 100, 100, 0.2);
         }
 
         .bi-box-arrow-right {
-            display: inline;
-        }
-
-        .btn span {
+            font-weight: bold;
             display: none;
         }
-    }
+
+        @media (max-width: 767px) {
+            .info {
+                font-size: 12px;
+            }
+
+            .btn-logout {
+                padding: 0px;
+                width: 40% !important;
+            }
+
+            .btn {
+                font-size: 5px;
+            }
+
+            #profile_image {
+                display: none;
+            }
+
+            .info_usr {
+                margin-top: 5px;
+                margin-left: 10px;
+                width: 60% !important;
+            }
+
+            .logo_sys a {
+                display: none;
+            }
+
+            .sticky-top .d-flex {
+                justify-content: center !important;
+            }
+
+            .bi-box-arrow-right {
+                display: inline;
+            }
+
+            .btn span {
+                display: none;
+            }
+        }
     </style>
 </head>
 
 <body>
     <main class="main" id="top">
         <nav class="fluid-container sticky-top p-2">
-            <div class="d-flex justify-content-between px-4">
+            <div class="d-flex justify-content-between">
                 <div class="logo_sys">
                     <img class="me-3" src="<?= base_url() . "/assets/img/logo.png" ?>" style="width: 45px">
-                    <a href="<?= base_url() . "/" ?>">ระบบโหวต</a>
+                    <a href="<?= base_url() . "/report" ?>">ระบบโหวต</a>
                 </div>
 
-                <div class="d-flex justify-content-center info">
-                    <img class="col-1 mt-1 text-center" src="https://dummyimage.com/40x40/000/fff" id="profile_image">
-                    <span class="col-7 text-center info_usr">
-                        <?= $_SESSION["usr_full_name"]?>
-                        <div class="d-flex justify-content-between mx-4">
-                            <div class="clus">มกุล 4 &nbsp;</div>
-                            <div class="coin">
-                                <i class="bi bi-coin"></i>
-                                <span id="remain_score"><?= $obj_user->usr_remain_score ?></span>
-                            </div>
-                        </div>
-                    </span>
-                    <div class="btn-logout col-5 text-center m-2">
-                        <a type="button" href="<?= base_url() . "/logout" ?>" class="btn btn-outline-danger waves-effect" style="font-weight: bold;">
-                            <i class="bi bi-box-arrow-right"></i>
-                            <span>Log out</span>
-                        </a>
-                    </div>
+                <div class="info">
+                    <a class="me-2" href="<?php echo base_url() . '/User_manage'?>">จัดการผู้ใช้</a>
+                    <a class="me-2" href="<?php echo base_url() . '/report'?>">ผลการโหวต</a>
+                    <img src="https://dummyimage.com/40x40/000/fff" id="profile_image">
+                    <span class="ms-2 info_usr"><?= $_SESSION["usr_full_name"]?></span>
+                    <a class="btn-logout ms-2 btn btn-outline-danger waves-effect" style="font-weight: bold;" href="<?= base_url() . "/logout" ?>">Log out</a>
                 </div>
+
             </div>
-        </nav>
+            </nav>
 
         <div class="container mt-5">
             <?php if (empty($arr_user)) :?>

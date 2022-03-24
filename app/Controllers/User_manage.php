@@ -8,6 +8,7 @@ use App\Models\M_vot_role;
 class User_manage extends Vot_controller {
 
     public function index() {
+        session_start();
         try {
             $m_usr = new M_vot_user();
             $data['arr_user'] = $m_usr

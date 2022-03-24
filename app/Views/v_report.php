@@ -20,74 +20,74 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet" />
 
     <style>
-    * {
-        font-family: 'Kanit', sans-serif !important;
-    }
-
-    .container {
-        max-width: 100%;
-    }
-
-    .chart {
-        height: 100%;
-    }
-
-    .con_chart {
-        padding: 20px;
-        margin: 50px;
-        box-shadow: 1px 1px 5px 3px rgba(100, 100, 100, 0.2);
-    }
-
-    .con_chart>* {
-        font-family: 'Bai Jamjuree', sans-serif !important;
-    }
-
-    tspan {
-        font-weight: bold;
-    }
-
-    #profile_image {
-        border-radius: 50%;
-    }
-
-    nav.fluid-container {
-        background-color: white !important;
-        box-shadow: 1px 1px 5px 3px rgba(100, 100, 100, 0.2);
-    }
-
-    .bi-box-arrow-right {
-        font-weight: bold;
-        display: none;
-    }
-
-    @media (max-width: 500px) {
-        .info {
-            font-size: 12px;
+        * {
+            font-family: 'Kanit', sans-serif !important;
         }
 
-        .btn-logout {
-            padding: 0px;
-            width: 40% !important;
+        .container {
+            max-width: 100%;
         }
 
-        .btn {
-            font-size: 5px;
+        .chart {
+            height: 100%;
+        }
+
+        .con_chart {
+            padding: 20px;
+            margin: 50px;
+            box-shadow: 1px 1px 5px 3px rgba(100, 100, 100, 0.2);
+        }
+
+        .con_chart>* {
+            font-family: 'Bai Jamjuree', sans-serif !important;
+        }
+
+        tspan {
+            font-weight: bold;
         }
 
         #profile_image {
+            border-radius: 50%;
+        }
+
+        nav.fluid-container {
+            background-color: white !important;
+            box-shadow: 1px 1px 5px 3px rgba(100, 100, 100, 0.2);
+        }
+
+        .bi-box-arrow-right {
+            font-weight: bold;
             display: none;
         }
 
-        .info_usr {
-            margin-top: 5px;
-            margin-left: 10px;
-            width: 60% !important;
-        }
+        @media (max-width: 500px) {
+            .info {
+                font-size: 12px;
+            }
 
-        .logo_sys a {
-            display: none;
+            .btn-logout {
+                padding: 0px;
+                width: 40% !important;
+            }
+
+            .btn {
+                font-size: 5px;
+            }
+
+            #profile_image {
+                display: none;
+            }
+
+            .info_usr {
+                margin-top: 5px;
+                margin-left: 10px;
+                width: 60% !important;
+            }
+
+            .logo_sys a {
+                display: none;
+            }
         }
-    }
     </style>
 
 </head>
@@ -102,12 +102,12 @@
                 </div>
 
                 <div class="info">
-                    <a class="me-2" href="#">จัดการผู้ใช้</a>
+                    <a class="me-2" href="<?php echo base_url() . '/User_manage'?>">จัดการผู้ใช้</a>
+                    <a class="me-2" href="<?php echo base_url() . '/report'?>">ผลการโหวต</a>
                     <img src="https://dummyimage.com/40x40/000/fff" id="profile_image">
                     <span class="ms-2 info_usr"><?= $_SESSION["usr_full_name"]?></span>
                     <a class="btn-logout ms-2 btn btn-outline-danger waves-effect" style="font-weight: bold;" href="<?= base_url() . "/logout" ?>">Log out</a>
                 </div>
-
             </div>
         </nav>
         <div class="con_chart">

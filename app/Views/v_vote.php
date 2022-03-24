@@ -81,8 +81,8 @@
                     <img class="me-3" src="<?= base_url() . "/assets/img/logo.png" ?>" style="width: 45px">
                     <a href="<?= base_url() . "/" ?>">ระบบโหวต</a>
                 </div>
-
-                <div class="d-flex justify-content-center info" >
+                
+                <div class="d-flex justify-content-end info">
                     <img class="col-1 mt-1 text-center" src="https://dummyimage.com/40x40/000/fff" id="profile_image">
                     <span class="col-7 text-center info_usr">
                         <?= $_SESSION["usr_full_name"]?>
