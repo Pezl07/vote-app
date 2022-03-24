@@ -87,9 +87,9 @@
                     <span class="col-7 text-center info_usr">
                         <?= $_SESSION["usr_full_name"]?>
                         <div class="d-flex justify-content-between mx-4">
-                            <div class="clus">มกุล 4 &nbsp;</div>
+                            <div class="clus"><?php echo ($_SESSION["cst_number"] != '' ? 'มกุล '.$_SESSION["cst_number"]  : $_SESSION["rol_name"])?> &nbsp;</div>
                             <div class="coin">
-                                <i class="bi bi-coin"></i>
+                                <i class="bi bi-coin" style="color: #ab8211"></i>
                                 <span id="remain_score"><?= $obj_user->usr_remain_score ?></span>
                             </div>
                         </div>
@@ -126,8 +126,8 @@
 
                                     <div class="d-flex justify-content-between mt-4">
                                         <div>
-                                            <h4 class="card-title mt-3">มกุล <?= $i ?></h4>
-                                            <h6 class="card-subtitle mb-3 text-muted"><?= "ระบบที่พัฒนา"?></h6>
+                                            <h4 class="card-title mt-3">มกุล <?= $arr_cluster[$i]->cst_number ?></h4>
+                                            <h6 class="card-subtitle mb-3 text-muted"><?= $arr_cluster[$i]->cst_system_name ?></h6>
                                         </div>
                                         <div>
                                             <img src="<?= "https://se.buu.ac.th/gami_ossd/assets/dist/img/cluster/cluster".$i.".png" ?>" style="border-radius: 50%; width: 60px; height: 60px; object-fit: cover">

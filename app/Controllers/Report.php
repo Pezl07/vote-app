@@ -14,10 +14,10 @@ class Report extends Vot_controller {
         if (!isset($_SESSION["usr_name"])) {
             return $this->response->redirect(base_url('/login'));
         }
-        // if ($_SESSION["usr_role"] == 5) {
-        //     echo "Access denied";
-        //     exit(0);
-        // }
+        if ($_SESSION["usr_role"] == 5) {
+            echo "Access denied";
+            exit(0);
+        }
 
         if (!isset($_SESSION["vote_status"]))
             $_SESSION["vote_status"] = "";
@@ -29,17 +29,19 @@ class Report extends Vot_controller {
         else
             $obj_user = $m_usr->get_by_usr_id($_SESSION["usr_id"]);
         $data["obj_user"] = $obj_user;
+        $m_cst = new M_vot_cluster();
+        $data["arr_cluster"] = $m_cst->get_all();
         echo view("v_vote", $data);
     }
 
     public function show_report() {
         if (!isset($_SESSION["usr_id"]))
             return $this->response->redirect(base_url('/login'));
-        // อย่าเพิ่งลบ
-        // if ($_SESSION["usr_role"] != 5) {
-        //     echo "Access denied, Admin only";
-        //     exit(0);
-        // }
+
+        if ($_SESSION["usr_role"] != 5) {
+            echo "Access denied, Admin only";
+            exit(0);
+        }
         
         $m_cst = new M_vot_cluster();
         $data['cluster'] = $m_cst->get_all();

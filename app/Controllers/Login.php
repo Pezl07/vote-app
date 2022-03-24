@@ -38,8 +38,14 @@ class Login extends Vot_controller {
             $_SESSION["usr_name"] = $obj_user->usr_name;
             $_SESSION["usr_full_name"] = $obj_user->usr_full_name;
             $_SESSION["usr_role"] = $obj_user->usr_role;
+            $_SESSION["rol_name"] = $obj_user->rol_name;
+            $_SESSION["cst_number"] = $obj_user->cst_number;
 
-            if ($_SESSION["usr_role"] == 5) {
+            echo '<pre>';
+            print_r($_SESSION["usr_role"]);
+            echo '</pre>';
+            
+            if ($_SESSION["usr_role"] == '5') {
                 return $this->response->redirect(base_url('/report'));
             }
             return $this->response->redirect(base_url('/vote'));

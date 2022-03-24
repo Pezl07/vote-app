@@ -9,6 +9,10 @@ class User_manage extends Vot_controller {
 
     public function index() {
         session_start();
+        if ($_SESSION["usr_role"] != '5') {
+            echo "Access denied, Admin only";
+            exit(0);
+        }
         try {
             $m_usr = new M_vot_user();
             $data['arr_user'] = $m_usr
@@ -66,6 +70,14 @@ class User_manage extends Vot_controller {
         }
     }
     public function delete($usr_id) {
+        if (!isset($_SESSION["usr_id"]))
+            return $this->response->redirect(base_url('/login'));
+
+        if ($_SESSION["usr_role"] != 5) {
+            echo "Access denied, Admin only";
+            exit(0);
+        }
+
         try {
             $m_usr = new M_vot_user();
             $m_usr->delete($usr_id);
