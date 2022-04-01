@@ -10,12 +10,9 @@
 		"ext-intl": "*",
 		"ext-json": "*",
 		"ext-mbstring": "*",
-		"kint-php/kint": "^3.3",
+		"kint-php/kint": "^3.3",	
 		"laminas/laminas-escaper": "^2.6",
 		"psr/log": "^1.1",
-		"phpoffice/phpspreadsheet": "^1.18",
-		"mpdf/mpdf": "^8.0",
-		"dompdf/dompdf": "^1.1",
 		"pusher/pusher-php-server": "^7.0"
 	},
 	"require-dev": {
